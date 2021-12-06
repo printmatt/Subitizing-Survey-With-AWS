@@ -1,0 +1,15 @@
+table#frameTable {
+	border-collapse: collapse;
+}
+
+td#leftFrame {
+	border: solid 1px black;
+}
+
+td#rightFrame {
+	border: solid 1px black;
+}
+
+canvas#canvas {
+	z-index: 1;
+}

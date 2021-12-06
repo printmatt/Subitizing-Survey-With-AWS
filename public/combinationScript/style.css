@@ -1,0 +1,7 @@
+table#fileTable {
+	border-collapse: collapse;
+}
+
+td.fileCell {
+	border: solid 1px black;
+}

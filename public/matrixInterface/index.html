@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Matrix Interface</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<table id="frameTable">
+			<tr>
+				<td id="leftFrame">
+					<!--<canvas id="grid"></canvas>-->
+					<canvas id="canvas"></canvas>
+				</td>
+				<td id="rightFrame" style="display: none;">
+					<form id="form">
+						<label for="colorInput">Color:</label>
+							<input type="color" id="colorInput"></input>
+						<br>
+						<br>
+						<label for="radiusInput">Radius:</label>
+							<input type="number" id="radiusInput"
+										min="2" max="10"></input>
+						<br>
+						<br>
+						<button type="button" id="deleteButton">Delete Dot</button>
+					</form>
+				</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<label for="nameInput">Name Your Dot Pattern: </label>
+		<input type="text" id="nameInput" value=""></input>
+		<br>
+		<br>
+		<button id="exportButton">Export Dot Pattern</button>
+		<br>
+		<br>
+		<button id="clearButton">Delete All Dots</button>
+		<script src="script.js"></script>
+	</body>
+</html>
