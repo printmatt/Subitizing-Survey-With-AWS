@@ -1,12 +1,13 @@
 # subitizationBaseline
- Baseline test for subitization skills.
+ Baseline test for subitizing skills.
 
 # Structure
- All client-side code is in the public directory.  Everything else is server-side stuff to test and demonstrate the capability to send the results of the test to a server.
+Public directory contains the script of running the survey.
+Server requests handling is in app.js (AWS hosting version) and appLocal.js (used to run on your own PC).
 
 # How to use
- Cloning the public directory and hosting it statically should be good enough.
- 
- I tried to use "npm init" to see if I could reproduce the node_modules directory from the package.json file and couldn't seem to get it to work.
- 
- However, the server-side code isn't set in stone as of now because we need to work out the logistics of using Adelphi's servers.
+1. Clone the repository or fork it
+2. Need to have set up ***Node*** and ***npm***
+3. In main directory, run **npm install** to install all dependencies
+4. Run **node ./appLocal.js** to start the application
+5. Go to _http://localhost:3000/_ on your web browser to access the survey locally
