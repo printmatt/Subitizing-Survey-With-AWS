@@ -234,9 +234,12 @@ class Dot {
 		const newTransformation = multiplyMatrixByMatrix(outsideTransformation, this.transformation);
 		const coordVector = [this.xCoord, this.yCoord, 1];
 		const transformedCoordVector = multiplyMatrixByVector(newTransformation, coordVector);
+		const canvasDimensions = [canvas.width, canvas.height];
+		const scaledCoordVector = [transformedCoordVector[0] * canvas.width,
+					transformedCoordVector[1] * canvas.height];
 		context.fillStyle = this.color;
 		context.beginPath();
-		context.arc(transformedCoordVector[0], transformedCoordVector[1], this.radius, 0, 2 * Math.PI);
+		context.arc(scaledCoordVector[0], scaledCoordVector[1], this.radius, 0, 2 * Math.PI);
 		context.fill();
 	}
 

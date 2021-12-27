@@ -1,7 +1,7 @@
 {
   "name": "subitizationbaseline2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Baseline test for subitizing skills.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +17,13 @@
     "node.js": "^0.0.1-security",
     "uuid": "^8.3.2",
     "uuidv4": "^6.2.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/printmatt/Subitizing-Survey-With-AWS.git"
+  },
+  "bugs": {
+    "url": "https://github.com/printmatt/Subitizing-Survey-With-AWS/issues"
+  },
+  "homepage": "https://github.com/printmatt/Subitizing-Survey-With-AWS#readme"
 }
