@@ -722,24 +722,14 @@ class Test {
 
 // Convert each entry in the array in the JSON string into a TestCase object using the constructors,
 // then return a Test made with those test cases.
+const randomSeed = "test_1";
 function jsonToTest(jsonString) {
 	let jsonObject = JSON.parse(jsonString);
+	const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
+	jsonObject.testCases = shuffleArray(jsonObject.testCases,groups,randomSeed);
 	let testCases = [];
 	for (let i = 0; i < jsonObject.testCases.length; i++) {
-	let testCaseJson = jsonObject.testCases[i];
-		/*
-		testCases.push(new TestCase(new Countdown(testCaseJson.countdown),
-					createUniformDotPattern(testCaseJson.dotPattern.numberOfDots,
-						testCaseJson.dotPattern.durationInMilliseconds,
-						testCaseJson.dotPattern.colorPalette,
-						testCaseJson.dotPattern.minRadius,
-						testCaseJson.dotPattern.maxRadius),
-					createUniformDistractorLinePattern(testCaseJson.distractorLinePattern.numberOfDistractorLines,
-						testCaseJson.distractorLinePattern.durationInMilliseconds,
-						testCaseJson.distractorLinePattern.colorPalette,
-						testCaseJson.distractorLinePattern.minWidth,
-						testCaseJson.distractorLinePattern.maxWidth)));
-		*/
+		let testCaseJson = jsonObject.testCases[i];
 
 		let countdown = new Countdown(testCaseJson.countdown);
 
@@ -812,11 +802,11 @@ function jsonToTest(jsonString) {
 			let translation = generateTranslationMatrix(translationX, translationY);
 
 			let transformation = multiplyMatrixByMatrix(translation, rotation);
-			console.log(transformation);
+			//console.log(transformation);
 			subPattern.transformation = transformation;
 			dotPattern.add(subPattern);
 		}
-		console.log(dotPattern);
+		//console.log(dotPattern);
 
 		let distractorLinePattern;
 		distractorLinePattern = createUniformDistractorLinePattern(testCaseJson.distractorLinePattern.numberOfDistractorLines,
@@ -829,6 +819,7 @@ function jsonToTest(jsonString) {
 		let testCase = new TestCase(countdown, dotPattern, distractorLinePattern, demo);
 		testCases.push(testCase);
 	}
+	
 	return new Test(testCases);
 }
 /*
