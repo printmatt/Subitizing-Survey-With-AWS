@@ -76,6 +76,7 @@ fitCanvasToFrame();
 const continueButton = document.getElementById("continue");
 const startButton = document.getElementById("start");
 const submitButton = document.getElementById("submit");
+const nextButton = document.getElementById("next");
 
 // Array of all timeouts that could be cleared when the user teminates the experiment.
 let timeouts = [];
@@ -538,6 +539,31 @@ class Prompt {
 	}
 }
 
+class NextScreen {
+	constructor() {
+	}
+
+	show(callback) {
+		this.eventListener = this.buttonClicked.bind(this, callback);
+		nextButton.addEventListener("click", this.eventListener);
+		nextButton.style.visibility = "visible";
+		nextButton.disabled = false;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.textAlign = "center";
+		context.fillStyle = "black";
+		context.font = "25px Arial"
+		context.fillText("Click the NEXT button to continue.", canvas.width / 2, canvas.height / 3);
+	}
+
+	buttonClicked(callback) {
+		nextButton.removeEventListener("click", this.eventListener);
+		nextButton.style.visibility = "hidden";
+		nextButton.disabled = true;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		timeouts.push(setTimeout(callback, 0));
+	}
+}
+
 class TestCase {
 	constructor(countdown, dotPattern, distractorLinePattern, demo) {
 		this.countdown = countdown;
@@ -547,8 +573,14 @@ class TestCase {
 		this.prompt = new Prompt();
 	}
 
-	runTestCase(callback, isLastTestCase) {
-		this.countdown.tick(this.hideEndExperimentButton.bind(this, callback, isLastTestCase));
+	runTestCase(callback, isFirstTestCase, isLastTestCase) {
+		const nextStep = this.hideEndExperimentButton.bind(this, callback, isLastTestCase);
+		if (isFirstTestCase) {
+			this.countdown.tick(nextStep);
+		} else {
+			const nextScreen = new NextScreen();
+			nextScreen.show(nextStep)
+		}
 	}
 
 	hideEndExperimentButton(callback, isLastTestCase) {
@@ -639,11 +671,19 @@ class Test {
 		if (this.currentTestCaseIndex >= this.testCases.length) {
 			timeouts.push(setTimeout(this.askToSubmit.bind(this, callback), 0));
 		} else {
-			if (this.currentTestCaseIndex == this.testCases.length - 1) {
-				this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), true);
+			let isFirstTestCase;
+			let isLastTestCase;
+			if (this.currentTestCaseIndex == 0) {
+				isFirstTestCase = true;
 			} else {
-				this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), false);
+				isFirstTestCase = false;
 			}
+			if (this.currentTestCaseIndex == this.testCases.length - 1) {
+				isLastTestCase = true;
+			} else {
+				isLastTestCase = false;
+			}
+			this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), isFirstTestCase, isLastTestCase);
 				// Run the test case and have it call the saveAnswer function once it's finished,
 				// passing the callback that will be called after the entire test is finished.  In
 				// this way, the callback could be passed through the entire process rather than having

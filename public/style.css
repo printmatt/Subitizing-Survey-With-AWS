@@ -111,6 +111,17 @@ button#start {
 	visibility: hidden;
 }
 
+button#next {
+	position: absolute;
+	left: 10%;
+	width: 80%;
+	top: 85%;
+	height: 10%;
+	background-color: green;
+	font-size: 25px;
+	visibility: hidden;
+}
+
 p#dialogue {
 	position: absolute;
 	left: 5%;
