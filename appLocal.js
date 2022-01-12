@@ -28,6 +28,11 @@ app.post("/uploadGenderAge",jsonParser,function(req,res){
 	console.log(sex);
 	console.log(age);
 })
+
+app.post("/experimentEnded",jsonParser, function(req,res){
+	var params = req.body;
+	console.log(params);
+})
 app.post("/uploadData", jsonParser, function(req, res) {
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;

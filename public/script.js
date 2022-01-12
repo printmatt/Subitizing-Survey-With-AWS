@@ -77,6 +77,8 @@ const continueButton = document.getElementById("continue");
 const startButton = document.getElementById("start");
 const submitButton = document.getElementById("submit");
 const nextButton = document.getElementById("next");
+const progress = document.getElementById("progress");
+var percentAnswer = "0%";
 
 // Array of all timeouts that could be cleared when the user teminates the experiment.
 let timeouts = [];
@@ -113,6 +115,18 @@ function endExperiment() {
 	submitButton.disabled = true;
 	submitButton.style.visibility = "hidden";
 
+	nextButton.disabled = true;
+	nextButton.style.visibility = "hidden";
+
+	console.log(percentAnswer);
+	var params = {
+		CompletedPercentage : percentAnswer
+	}
+	//console.log(JSON.stringify({"userAnswers": userAnswers}));
+	let dataUploader = new XMLHttpRequest();
+	dataUploader.open("POST", "experimentEnded");
+	dataUploader.setRequestHeader("Content-Type", "application/json");
+	dataUploader.send(JSON.stringify(params));
 	// Trigger an event that the Test object will be listening for.
 	// One the event is triggered, the test object will destroy all saved data.
 	const destroyData = new Event("destroyData");
@@ -628,6 +642,8 @@ class Test {
 				//console.log(dialogueRequest.response);
 				dialogueContainer.style.visibility = "visible";
 				dialogueContainer.innerHTML = dialogueRequest.response;
+				endExperimentButton.disabled = true;
+				endExperimentButton.style.visibility = "hidden";
 				startButton.disabled = false;
 				startButton.style.visibility = "visible";
 				startButton.eventListener = this.getGenderAge.bind(this, callback);
@@ -664,6 +680,8 @@ class Test {
 		dialogueContainer.style.display = "none";
 		continueButton.disabled = true;
 		continueButton.style.visibility = "hidden";
+		endExperimentButton.disabled = false;
+		endExperimentButton.style.visibility = "visible";
 		timeouts.push(setTimeout(this.nextTestCase.bind(this, callback), 0));
 	}
 
@@ -692,6 +710,9 @@ class Test {
 				// callback included here.  The test case will call saveAnswer with the provided callback
 				// as the first parameter and the number the user clicked as the second parameter.
 			this.currentTestCaseIndex++;
+			percentAnswer = (this.currentTestCaseIndex-1)/this.testCases.length*100 + "%";
+			progress.style.width = percentAnswer;
+			progress.innerHTML = percentAnswer;
 		}
 	}
 

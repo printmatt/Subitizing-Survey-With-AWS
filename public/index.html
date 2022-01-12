@@ -1,85 +1,95 @@
 <html>
-	<head>
-		<title>Subitizaton Baseline</title>
-		<link rel="stylesheet" href="style.css">
-	</head>
-	<body>
-		<div id="blocker">
-			<h1>Window or Screen Too Small</h1>
-			<br>
-			Please resize your window or try a different device.
-		</div>
-		<table id="frameTable">
-			<tr>
-				<td id="leftFrame">
-					<table id="buttons">
-						<tr style="height: 80%;">
-							<td>
-								<table id="numberButtons">
-									<tr class="numberButtonRow">
-										<td class="buttonCell">
-											<button disabled class="numberButton">1</button>
-										</td>
-										<td class="buttonCell">
-											<button disabled class="numberButton">2</button>
-										</td>
-									</tr>
-									<tr class="numberButtonRow">
-										<td class="buttonCell">
-											<button disabled class="numberButton">3</button>
-										</td>
-										<td class="buttonCell">
-											<button disabled class="numberButton">4</button>
-										</td>
-									</tr>
-									<tr class="numberButtonRow">
-										<td class="buttonCell">
-											<button disabled class="numberButton">5</button>
-										</td>
-										<td class="buttonCell">
-											<button disabled class="numberButton">6</button>
-										</td>
-									</tr>
-									<tr class="numberButtonRow">
-										<td class="buttonCell">
-											<button disabled class="numberButton">7</button>
-										</td>
-										<td class="buttonCell">
-											<button disabled class="numberButton">8</button>
-										</td>
-									</tr>
-									<tr class="numberButtonRow">
-										<td class="buttonCell">
-											<button disabled class="numberButton">9</button>
-										</td>
-										<td class="buttonCell">
-											<button disabled class="numberButton">10</button>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr style="height: 20%;">
-							<td>
-								<button id="endExperiment">End the Experiment</button>
-							</td>
-						</tr>
-					</table>
-				</td>
-				<td id="rightFrame">
-					<div id="rightFrameContents">
-						<canvas id="canvas"></canvas>
-						<button id="continue" type = "submit" form="backgroundInfo" disabled>CONTINUE</button>
-						<button id="submit" disabled>SUBMIT DATA</button>
-						<button id="start" disabled>START</button>
-						<button id="next" disabled>NEXT</button>
-						<p id="dialogue"></p>
-					</div>
-				</td>
-			</tr>
-		</table>
-		<script src="script.js"></script>
-		<script src="./shuffler/randomize.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
-	</body>
+
+<head>
+	<title>Subitizaton Baseline</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="blocker">
+		<h1>Window or Screen Too Small</h1>
+		<br>
+		Please resize your window or try a different device.
+	</div>
+
+	<table id="frameTable">
+		<tr>
+			<td id="bar" colspan="2">
+				<div id="progress"></div>
+			</td>
+			
+		</tr>
+		<tr>
+			<td id="leftFrame">
+				<table id="buttons">
+					<tr style="height: 80%;">
+						<td>
+							<table id="numberButtons">
+								<tr class="numberButtonRow">
+									<td class="buttonCell">
+										<button disabled class="numberButton">1</button>
+									</td>
+									<td class="buttonCell">
+										<button disabled class="numberButton">2</button>
+									</td>
+								</tr>
+								<tr class="numberButtonRow">
+									<td class="buttonCell">
+										<button disabled class="numberButton">3</button>
+									</td>
+									<td class="buttonCell">
+										<button disabled class="numberButton">4</button>
+									</td>
+								</tr>
+								<tr class="numberButtonRow">
+									<td class="buttonCell">
+										<button disabled class="numberButton">5</button>
+									</td>
+									<td class="buttonCell">
+										<button disabled class="numberButton">6</button>
+									</td>
+								</tr>
+								<tr class="numberButtonRow">
+									<td class="buttonCell">
+										<button disabled class="numberButton">7</button>
+									</td>
+									<td class="buttonCell">
+										<button disabled class="numberButton">8</button>
+									</td>
+								</tr>
+								<tr class="numberButtonRow">
+									<td class="buttonCell">
+										<button disabled class="numberButton">9</button>
+									</td>
+									<td class="buttonCell">
+										<button disabled class="numberButton">10</button>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr style="height: 20%;">
+						<td>
+							<button id="endExperiment">End the Experiment</button>
+						</td>
+					</tr>
+				</table>
+			</td>
+			<td id="rightFrame">
+				<div id="rightFrameContents">
+					<canvas id="canvas"></canvas>
+					<button id="continue" type="submit" form="backgroundInfo" disabled>CONTINUE</button>
+					<button id="submit" disabled>SUBMIT DATA</button>
+					<button id="start" disabled>START</button>
+					<button id="next" disabled>NEXT</button>
+					<p id="dialogue"></p>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<script src="script.js"></script>
+	<script src="./shuffler/randomize.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+</body>
+
 </html>
