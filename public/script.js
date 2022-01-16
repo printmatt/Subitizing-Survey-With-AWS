@@ -365,7 +365,7 @@ class DistractorLinePattern {
 	drawForSomeTime(callback) {
 		this.draw();
 		timeouts.push(setTimeout(function() {
-			context.clearRect(0, 0, canvas.width, canvas.height);
+			//context.clearRect(0, 0, canvas.width, canvas.height);
 			timeouts.push(setTimeout(callback, 0)); // setTimeout is used to call the callback asynchronously.
 		}, this.durationInMilliseconds));
 	}
@@ -579,10 +579,10 @@ class NextScreen {
 }
 
 class TestCase {
-	constructor(countdown, dotPattern, distractorLinePattern, demo) {
+	constructor(countdown, dotPattern, distractorLinePatterns, demo) {
 		this.countdown = countdown;
 		this.dotPattern = dotPattern;
-		this.distractorLinePattern = distractorLinePattern;
+		this.distractorLinePatterns = distractorLinePatterns;
 		this.demo = demo;
 		this.prompt = new Prompt();
 	}
@@ -616,14 +616,18 @@ class TestCase {
 	showPrompt(callback, isLastTestCase) {
 		let demo = this.demo ? this.dotPattern.numberOfDots : false;
 		if (!isLastTestCase) {
-			this.prompt.askUser(demo, this.drawDistractorLinePatternForSomeTime.bind(this, callback));
+			this.prompt.askUser(demo, this.drawDistractorLinePatternForSomeTime.bind(this, 0, callback));
 		} else {
 			this.prompt.askUser(demo, callback);
 		}
 	}
 
-	drawDistractorLinePatternForSomeTime(callback, answer) {
-		this.distractorLinePattern.drawForSomeTime(callback.bind(this, answer));
+	drawDistractorLinePatternForSomeTime(currentIndex, callback, answer) {
+		if (currentIndex < this.distractorLinePatterns.length) {
+			this.distractorLinePatterns[currentIndex].drawForSomeTime(this.drawDistractorLinePatternForSomeTime.bind(this, currentIndex + 1, callback, answer));
+		} else {
+			timeouts.push(setTimeout(callback.bind(this, answer), 0));
+		}
 	}
 }
 
@@ -710,7 +714,7 @@ class Test {
 				// callback included here.  The test case will call saveAnswer with the provided callback
 				// as the first parameter and the number the user clicked as the second parameter.
 			this.currentTestCaseIndex++;
-			percentAnswer = (this.currentTestCaseIndex-1)/this.testCases.length*100 + "%";
+			percentAnswer = Math.floor((this.currentTestCaseIndex-1)/this.testCases.length*100) + "%";
 			progress.style.width = percentAnswer;
 			progress.innerHTML = percentAnswer;
 		}
@@ -778,6 +782,9 @@ class Test {
 		endExperimentButton.disabled = true;
 		endExperimentButton.style.visibility = "hidden";
 		timeouts.push(setTimeout(callback.bind(null, this.userAnswers), 0));
+
+		progress.style.width = "100%";
+		progress.innerHTML = "100%";
 	}
 }
 
@@ -869,15 +876,29 @@ function jsonToTest(jsonString) {
 		}
 		//console.log(dotPattern);
 
+		/*
 		let distractorLinePattern;
 		distractorLinePattern = createUniformDistractorLinePattern(testCaseJson.distractorLinePattern.numberOfDistractorLines,
 						testCaseJson.distractorLinePattern.durationInMilliseconds,
 						testCaseJson.distractorLinePattern.colorPalette,
 						testCaseJson.distractorLinePattern.minWidth,
 						testCaseJson.distractorLinePattern.maxWidth);
+		*/
+
+		let distractorLinePatterns = new Array(testCaseJson.distractorLinePatterns.length);
+		for (let i = 0; i < testCaseJson.distractorLinePatterns.length; i++) {
+			distractorLinePatterns[i] = createUniformDistractorLinePattern(testCaseJson.distractorLinePatterns[i].numberOfDistractorLines,
+				testCaseJson.distractorLinePatterns[i].durationInMilliseconds,
+				testCaseJson.distractorLinePatterns[i].colorPalette,
+				testCaseJson.distractorLinePatterns[i].minWidth,
+				testCaseJson.distractorLinePatterns[i].maxWidth);
+		}
+
+		console.log(distractorLinePatterns);
+
 		let demo = !!testCaseJson.demo;
 
-		let testCase = new TestCase(countdown, dotPattern, distractorLinePattern, demo);
+		let testCase = new TestCase(countdown, dotPattern, distractorLinePatterns, demo);
 		testCases.push(testCase);
 	}
 	
