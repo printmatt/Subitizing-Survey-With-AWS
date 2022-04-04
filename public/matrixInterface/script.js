@@ -239,8 +239,8 @@ exportButton.addEventListener("click", function() {
 			const currentCell = dotMatrix[x][y];
 			if (!currentCell.isEmpty) {
 				dotArray.push({"type": "dot",
-						"xCoord": currentCell.xCoord,
-						"yCoord": currentCell.yCoord,
+						"xCoord": currentCell.xCoord / canvas.width,
+						"yCoord": currentCell.yCoord / canvas.height,
 						"color": currentCell.color,
 						"dotRadius": currentCell.radius});
 			}

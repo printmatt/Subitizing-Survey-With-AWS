@@ -9,7 +9,7 @@ let fileRows = [];
 
 const distractorLinePattern = {
 	"numberOfDistractorLines": 100,
-	"durationInMilliseconds": 2000,
+	"durationInMilliseconds": 100,
 	"colorPalette": ["red", "orange", "yellow", "green", "blue", "purple", "black", "pink", "brown"],
 	"minWidth": 1,
 	"maxWidth": 1
@@ -129,7 +129,7 @@ function createTest() {
 		for (let i = 0; i < fileContents.length; i++) {
 			const dotPatternJson = JSON.parse(fileContents[i]);
 			let testCase = {};
-			testCase.distractorLinePattern = distractorLinePattern;
+			testCase.distractorLinePatterns = [distractorLinePattern, distractorLinePattern];
 			testCase.countdown = 4;
 			testCase.dotPatterns = dotPatternJson.dotPatterns;
 			testCase.durationOfDotPatternInMilliseconds = 3000;
