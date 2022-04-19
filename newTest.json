@@ -3,7 +3,7 @@
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -22,19 +22,19 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500,
-            "demo": true
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N1P#1"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -53,26 +53,26 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500,
-            "demo": true
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N2P#1"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -91,26 +91,26 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500,
-            "demo": true
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N2P#2"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -129,25 +129,26 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N2P#3"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -166,25 +167,26 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N2P#4"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -203,32 +205,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#1"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -247,32 +250,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#2"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -291,32 +295,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#3"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -335,32 +340,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#4"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -379,32 +385,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#5"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -423,39 +430,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#6"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -474,39 +475,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#7"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -525,39 +520,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#8"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -576,39 +565,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#9"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -627,39 +610,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#10"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -678,39 +655,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#11"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -729,39 +700,33 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N3P#12"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -780,46 +745,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.10204081632653061,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#1"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -838,46 +797,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.9622926093514328,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#2"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -896,46 +849,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.10204081632653061,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#3"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -954,46 +901,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.3,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#4"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1012,46 +953,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.3,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.8503401360544217,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.7,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#5"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1070,46 +1005,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.3,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.7,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#6"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1128,53 +1057,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.5102040816326532,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#7"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1193,53 +1109,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.17006802721088438,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.7,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#8"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1258,53 +1161,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.3,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.9183673469387755,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.7,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#9"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1323,60 +1213,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5102040816326532,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#10"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1395,60 +1265,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.7,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#11"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1467,60 +1317,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.3,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.17006802721088438,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.7,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#12"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1539,60 +1369,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.7142857142857143,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#13"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1611,67 +1421,40 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N4P#14"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1690,67 +1473,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7142857142857143,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#1"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1769,67 +1532,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.8503401360544217,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.7,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#2"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1848,74 +1591,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.7142857142857143,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.7,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#3"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -1934,74 +1650,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.3,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#4"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2020,74 +1709,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.3,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#5"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2106,74 +1768,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#6"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2192,74 +1827,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.8503401360544217,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.10204081632653061,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.5102040816326532,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.9863945578231293,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#7"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2278,81 +1886,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#8"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2371,81 +1945,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.5102040816326532,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.9183673469387755,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#9"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2464,81 +2004,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.17006802721088438,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.30612244897959184,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.7,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#10"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2557,81 +2063,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.2333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.9622926093514328,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.9622926093514328,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#11"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2650,81 +2122,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.17006802721088438,
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.034013605442176874,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.8503401360544217,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#12"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2743,46 +2181,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.5102040816326532,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6304675716440423,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#13"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2801,60 +2240,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.9183673469387755,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7142857142857143,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.7631975867269984,
-                    "yCoord": 0.10204081632653061,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8959276018099548,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#14"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2873,53 +2299,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.30612244897959184,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#15"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -2938,53 +2358,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.7666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.6462585034013606,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.8295625942684767,
-                    "yCoord": 0.7823129251700681,
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#16"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -3003,46 +2417,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.44217687074829937,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.2333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.09954751131221719,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.23227752639517346,
-                    "yCoord": 0.7142857142857143,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.7666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#17"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -3061,67 +2476,47 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.2333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.3650075414781297,
-                    "yCoord": 0.5782312925170069,
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.6333333333333333,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.44217687074829937,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4977375565610859,
-                    "yCoord": 0.5782312925170069,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.7823129251700681,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.6462585034013606,
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.7666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#18"
         },
         {
             "distractorLinePattern": {
                 "numberOfDistractorLines": 100,
-                "durationInMilliseconds": 500,
+                "durationInMilliseconds": 2000,
                 "colorPalette": [
                     "red",
                     "orange",
@@ -3140,62 +2535,573 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.16591251885369532,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.3,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.2986425339366516,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.3,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.23809523809523808,
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.4313725490196078,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5641025641025641,
-                    "yCoord": 0.3741496598639456,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.23809523809523808,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6968325791855203,
-                    "yCoord": 0.3741496598639456,
+                    "xCoord": 0.7,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
             ],
-            "durationOfDotPatternInMilliseconds": 500
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#19"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.7666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.2333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#20"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.7,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#21"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#22"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.3,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.7,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#23"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.2333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.7666666666666666,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#24"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.43333333333333335,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.7,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.7,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#25"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.43333333333333335,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.7,
+                    "yCoord": 0.43333333333333335,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#26"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#27"
+        },
+        {
+            "distractorLinePattern": {
+                "numberOfDistractorLines": 100,
+                "durationInMilliseconds": 2000,
+                "colorPalette": [
+                    "red",
+                    "orange",
+                    "yellow",
+                    "green",
+                    "blue",
+                    "purple",
+                    "black",
+                    "pink",
+                    "brown"
+                ],
+                "minWidth": 1,
+                "maxWidth": 1
+            },
+            "countdown": 4,
+            "dotPatterns": [
+                {
+                    "type": "dot",
+                    "xCoord": 0.23333333333333334,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.5666666666666668,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.2333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                }
+            ],
+            "durationOfDotPatternInMilliseconds": 3000,
+            "name": "N5P#28"
         }
     ]
 }
