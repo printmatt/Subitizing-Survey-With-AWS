@@ -1,36 +1,4 @@
 
-//const seedrandom = require("seedrandom");
-
-
-// function randomizePatterns(randomSeed, numOfDots, numOfPatterns){
-//     var patterns = []
-//     Math.seedrandom(randomSeed)
-//     for(var i = 0; i < numOfPatterns; i++){
-//         var dots = []
-//         for (var j = 0; j < numOfDots; j++) {
-//             dots.push(Math.random(),Math.random())
-//         }
-//         patterns.push(dots)
-//     }
-//     return patterns;
-// }
-
-
-// function patternsFromArray(patterns, radius, canvasWidth, canvasHeight, durationInMilliseconds){
-//     let patternsToView = [];
-// 	for(var i = 0; i < patterns.length; i++){
-//         var dots = []
-//         for (var j = 0; j < patterns[i].length; j++) {
-//             dots.push(new Dot(
-//                         patterns[i][j] * canvasWidth,
-//                         patterns[i][j] * canvasHeight,
-//                         "black",
-//                         patterns[i][j] * radius))
-//         }
-//         patternsToView.push(new DotPattern(dots, durationInMilliseconds))
-//     }
-//     return patternsToView;
-// }
 
 function shuffle(groups,randomSeed){
     var ans = [] // answer array with the shuffled elements

@@ -33,7 +33,7 @@ data.testCases = data.testCases.map(test => {
     return test
 })
 
-fs.writeFile("./public/extractPatterns/orderedFinalTest.json", JSON.stringify(data), err => {
+fs.writeFile("./extractPatterns/orderedFinalTest.json", JSON.stringify(data), err => {
      
     // Checking for errors
     if (err) throw err; 
