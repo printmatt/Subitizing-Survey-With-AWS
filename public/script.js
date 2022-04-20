@@ -793,8 +793,8 @@ class Test {
 const randomSeed = "test_1";
 function jsonToTest(jsonString) {
 	let jsonObject = JSON.parse(jsonString);
-	const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
-	jsonObject.testCases = shuffleArray(jsonObject.testCases,groups,randomSeed);
+	//const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
+	//jsonObject.testCases = shuffleArray(jsonObject.testCases,groups,randomSeed);
 	let testCases = [];
 	for (let i = 0; i < jsonObject.testCases.length; i++) {
 		let testCaseJson = jsonObject.testCases[i];
@@ -972,5 +972,5 @@ jsonRequest.onreadystatechange = function() {
 		});
 	}
 };
-jsonRequest.open("GET", "testCases.json");
+jsonRequest.open("GET", "Version1.json");
 jsonRequest.send();

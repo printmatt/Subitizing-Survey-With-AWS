@@ -1,1 +1,18 @@
-{"dotPatterns":[{"type":"dot","xCoord":0.49999999999999994,"yCoord":0.43333333333333335,"color":"#000000","dotRadius":"8"},{"type":"dot","xCoord":0.49999999999999994,"yCoord":0.5666666666666668,"color":"#000000","dotRadius":"8"}]}
+{
+    "dotPatterns": [
+        {
+            "type": "dot",
+            "xCoord": 0.49999999999999994,
+            "yCoord": 0.43333333333333335,
+            "color": "#000000",
+            "dotRadius": "8"
+        },
+        {
+            "type": "dot",
+            "xCoord": 0.49999999999999994,
+            "yCoord": 0.5666666666666668,
+            "color": "#000000",
+            "dotRadius": "8"
+        }
+    ]
+}

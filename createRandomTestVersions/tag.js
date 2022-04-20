@@ -15,6 +15,9 @@ const arr = [
 
 let i = 0;
 data.testCases = data.testCases.map(test => {
+    test.durationOfDotPatternInMilliseconds = 500
+    test.distractorLinePatterns[0].durationInMilliseconds = 500
+    test.distractorLinePatterns[1].durationInMilliseconds = 500
 
     test.name = arr[i]
     i++
@@ -23,7 +26,7 @@ data.testCases = data.testCases.map(test => {
     return test
 })
 
-fs.writeFile("./public/extractPatterns/taggedFinalTest.json", JSON.stringify(data), err => {
+fs.writeFile("./createRandomTestVersions/taggedFinalTest.json", JSON.stringify(data), err => {
      
     // Checking for errors
     if (err) throw err; 
