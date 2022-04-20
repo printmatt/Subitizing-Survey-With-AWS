@@ -1,26 +1,26 @@
 
 
-function shuffle(groups,randomSeed){
+function shuffle(groups, randomSeed) {
     var ans = [] // answer array with the shuffled elements
     var set = [] // the temporary array to hold elements so we can take out randomly without repeating elements
     Math.seedrandom(randomSeed);
-    
+
     //seedrandom(randomSeed,{global:true});
-    for(var i = 0; i < groups[0][0]; i++){
+    for (var i = 0; i < groups[0][0]; i++) {
         ans.push(i);
     }
-    for(var i = 0; i < groups.length; i++){
+    for (var i = 0; i < groups.length; i++) {
         var group = groups[i]; //group 1,2,3,4,...;
 
         //put cases into set
-        for(var j = group[0]; j < group[1]; j++){
+        for (var j = group[0]; j < group[1]; j++) {
             set.push(j);
         }
 
         //take cases out from set according to number of test cases to draw
-        for(var k = 0; k < group[2]; k++){
-            var takeIndex = Math.floor(Math.random()*set.length);
-            var testCase = set.splice(takeIndex,1)[0];
+        for (var k = 0; k < group[2]; k++) {
+            var takeIndex = Math.floor(Math.random() * set.length);
+            var testCase = set.splice(takeIndex, 1)[0];
             ans.push(testCase);
         }
     }
@@ -42,87 +42,16 @@ function shuffleArray(objects, groups, randomSeed) {
     return ans;
 }
 
-// const testGroups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
-// var arr = shuffle(testGroups,"test");
-// console.log(arr);
-
-
-// -----------------------------------------------------------------------------------------------------------------------------
-// class Dot {
-// 	constructor(xCoord, yCoord, color, radius) {
-// 		this.xCoord = xCoord;
-// 		this.yCoord = yCoord;
-// 		this.color = color;
-// 		this.radius = radius;
-// 		this.transformation = cloneMatrix(identityMatrix);
-// 	}
-
-// 	get numberOfDots() {
-// 		return 1;
-// 	}
-
-// 	draw(outsideTransformation = identityMatrix) {
-// 		const newTransformation = multiplyMatrixByMatrix(outsideTransformation, this.transformation);
-// 		const coordVector = [this.xCoord, this.yCoord, 1];
-// 		const transformedCoordVector = multiplyMatrixByVector(newTransformation, coordVector);
-// 		const canvasDimensions = [canvas.width, canvas.height];
-// 		const scaledCoordVector = [transformedCoordVector[0] * canvas.width,
-// 					transformedCoordVector[1] * canvas.height];
-// 		context.fillStyle = this.color;
-// 		context.beginPath();
-// 		context.arc(scaledCoordVector[0], scaledCoordVector[1], this.radius, 0, 2 * Math.PI);
-// 		context.fill();
-// 	}
-
-// 	mutate(xCoordStdDev, yCoordStdDev, radiusStdDev) {
-// 		//this.xCoord = normal(this.xCoord, xCoordStdDev);
-// 		//this.yCoord = normal(this.yCoord, yCoordStdDev);
-// 		//this.radius = normal(this.radius, radiusStdDev);
-// 	}
-
-// }
-
-// class DotPattern {
-// 	constructor(dots, durationInMilliseconds) { // dots is an array of instances of the Dot class
-// 		this.dots = dots;
-// 		this.durationInMilliseconds = durationInMilliseconds;
-// 		this.transformation = cloneMatrix(identityMatrix);
-// 	}
-
-// 	get numberOfDots() {
-// 		let accumulator = 0;
-// 		for (let i = 0; i < this.dots.length; i++) {
-// 			accumulator += this.dots[i].numberOfDots;
-// 		}
-// 		return accumulator;
-// 	}
-
-// 	draw(outsideTransformation = identityMatrix) {
-// 		const newTransformation = multiplyMatrixByMatrix(outsideTransformation, this.transformation);
-// 		console.log(newTransformation);
-// 		for (let i = 0; i < this.dots.length; i++) {
-// 			this.dots[i].draw(newTransformation);
-// 		}
-// 	}
-	
-// 	// Draw the dot pattern for the specified number of milliseconds,
-// 	// then clear the canvas and call the specified callback function.
-// 	drawForSomeTime(callback, transformation = identityMatrix) {
-// 		this.draw(transformation);
-// 		timeouts.push(setTimeout(function() {
-// 			context.clearRect(0, 0, canvas.width, canvas.height);
-// 			timeouts.push(setTimeout(callback, 0)); // setTimeout is used to call the callback asynchronously.
-// 		}, this.durationInMilliseconds));
-// 	}
-
-// 	add(that) {
-// 		this.dots.push(that);
-// 	}
-
-// 	mutate(xCoordStdDev, yCoordStdDev, radiusStdDev) {
-// 		for (let i = 0; i < this.dots.length; i++) {
-// 			this.dots[i].mutate(xCoordStdDev, yCoordStdDev, radiusStdDev);
-// 		}
-// 	}
-
-// }
+// complete random shuffle
+function completeShuffle(randomSeed, arr) {
+    Math.seedrandom(randomSeed);
+    let currentIndex = arr.length, randomIndex;
+    while (currentIndex != 0) {
+        //pick remaining element
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+        [arr[currentIndex], arr[randomIndex]] = [
+            arr[randomIndex], arr[currentIndex]];
+    }
+    return arr;
+}

@@ -1378,15 +1378,36 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.49999999999999994,
-                    "yCoord": 0.43333333333333335,
+                    "xCoord": 0.36666666666666664,
+                    "yCoord": 0.5000000000000001,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.4333333333333333,
+                    "yCoord": 0.3666666666666667,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
                     "xCoord": 0.49999999999999994,
-                    "yCoord": 0.5666666666666668,
+                    "yCoord": 0.6333333333333333,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.5666666666666667,
+                    "yCoord": 0.3666666666666667,
+                    "color": "#000000",
+                    "dotRadius": "8"
+                },
+                {
+                    "type": "dot",
+                    "xCoord": 0.6333333333333334,
+                    "yCoord": 0.5000000000000001,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
@@ -1434,40 +1455,20 @@
             "dotPatterns": [
                 {
                     "type": "dot",
-                    "xCoord": 0.36666666666666664,
-                    "yCoord": 0.5000000000000001,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.4333333333333333,
-                    "yCoord": 0.3666666666666667,
+                    "xCoord": 0.49999999999999994,
+                    "yCoord": 0.43333333333333335,
                     "color": "#000000",
                     "dotRadius": "8"
                 },
                 {
                     "type": "dot",
                     "xCoord": 0.49999999999999994,
-                    "yCoord": 0.6333333333333333,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.5666666666666667,
-                    "yCoord": 0.3666666666666667,
-                    "color": "#000000",
-                    "dotRadius": "8"
-                },
-                {
-                    "type": "dot",
-                    "xCoord": 0.6333333333333334,
-                    "yCoord": 0.5000000000000001,
+                    "yCoord": 0.5666666666666668,
                     "color": "#000000",
                     "dotRadius": "8"
                 }
-            ],
+            ]
+            ,
             "durationOfDotPatternInMilliseconds": 3000
         },
         {

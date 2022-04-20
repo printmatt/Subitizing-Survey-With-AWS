@@ -109,7 +109,7 @@ function generateTestVersions(randomSeed){
 
     // add 18 completely randomized cases
     for(let j = 0; j <= 2; j++){
-        for(let i = 0; i <= 18; i++){
+        for(let i = 0; i < 18; i++){
             var numDots = Math.floor(Math.random()*5)+1;
             var patterns = randomizePatterns(Math.random(),numDots,1)
             var dotPatterns = patternsFromArray(patterns)
@@ -124,7 +124,6 @@ function generateTestVersions(randomSeed){
 function shuffleByThree(arr, randomSeed){
     if(arr.length % 3 != 0) return arr;
     // seedrandom(randomSeed, { global: true });
-
     for(let i = 0; i < arr.length; i+=3){
         let currentIndex = i+3, randomIndex;
         while(currentIndex != i){

@@ -794,7 +794,7 @@ const randomSeed = "test_1";
 function jsonToTest(jsonString) {
 	let jsonObject = JSON.parse(jsonString);
 	//const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
-	//jsonObject.testCases = shuffleArray(jsonObject.testCases,groups,randomSeed);
+	jsonObject.testCases = completeShuffle(randomSeed,jsonObject.testCases);
 	let testCases = [];
 	for (let i = 0; i < jsonObject.testCases.length; i++) {
 		let testCaseJson = jsonObject.testCases[i];
