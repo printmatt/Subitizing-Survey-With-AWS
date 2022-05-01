@@ -595,6 +595,7 @@ class TestCase {
 			const nextScreen = new NextScreen();
 			nextScreen.show(nextStep)
 		}
+		console.log(this);
 	}
 
 	hideEndExperimentButton(callback, isLastTestCase) {
@@ -626,7 +627,7 @@ class TestCase {
 		if (currentIndex < this.distractorLinePatterns.length) {
 			this.distractorLinePatterns[currentIndex].drawForSomeTime(this.drawDistractorLinePatternForSomeTime.bind(this, currentIndex + 1, callback, answer));
 		} else {
-			timeouts.push(setTimeout(callback.bind(this, answer), 0));
+			timeouts.push(setTimeout(callback.bind(this, answer, answer == this.dotPattern.dots.length), 0));
 		}
 	}
 }
@@ -636,10 +637,22 @@ class Test {
 		this.testCases = testCases;
 		this.currentTestCaseIndex = 0;
 		this.userAnswers = [];
+		this.numCorrect = 0;
 		document.addEventListener("destroyData", this.destroyData.bind(this));
 	}
 
 	runTest(callback) {
+		/*
+		const testIdRequest = new XMLHttpRequest();
+		testIdRequest.onreadystatechange = function() {
+			if ((testIdRequest.readyState == 4) && (testIdRequest.status == 200)) {
+				this.testId = testIdRequest.response;
+			}
+		}
+		testIdRequest.open("GET", "/getTestId");
+		testIdRequest.send();
+		*/
+
 		let dialogueRequest = new XMLHttpRequest();
 		dialogueRequest.onreadystatechange = function() {
 			if ((dialogueRequest.readyState == 4) && (dialogueRequest.status == 200)) {
@@ -652,7 +665,6 @@ class Test {
 				startButton.style.visibility = "visible";
 				startButton.eventListener = this.getGenderAge.bind(this, callback);
 				startButton.addEventListener("click", startButton.eventListener);
-
 			}
 		}.bind(this);
 		dialogueRequest.open("GET", "dialogue/beforeStarting.html");
@@ -720,11 +732,13 @@ class Test {
 		}
 	}
 
-	saveAnswer(callback, answer) {
+	saveAnswer(callback, answer, isCorrect) {
 		//console.log(answer);
 		this.userAnswers.push(answer);
 		console.log({"userAnswers": this.userAnswers});
 		timeouts.push(setTimeout(this.nextTestCase.bind(this, callback)));
+		if (isCorrect) this.numCorrect++;
+		console.log(isCorrect);
 	}
 
 	destroyData() {
@@ -770,10 +784,12 @@ class Test {
 		context.font = "16px Arial";
 		context.fillText("Your response has been recorded.", canvas.width / 2, canvas.height * (2 / 3));
 		*/
+		const feedbackStr = this.numCorrect + " out of " + this.testCases.length;
 		let dialogueRequest = new XMLHttpRequest();
 		dialogueRequest.onreadystatechange = function() {
 			if ((dialogueRequest.readyState == 4) && (dialogueRequest.status == 200)) {
 				dialogueContainer.innerHTML = dialogueRequest.response;
+				document.getElementById("feedback").innerText = feedbackStr;
 			}
 		}
 		dialogueRequest.open("GET", "dialogue/afterSubmitting.html");
@@ -793,8 +809,9 @@ class Test {
 const randomSeed = "test_1";
 function jsonToTest(jsonString) {
 	let jsonObject = JSON.parse(jsonString);
+	//console.log("Version Number: " + jsonObject.version);
 	//const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
-	jsonObject.testCases = completeShuffle(randomSeed,jsonObject.testCases);
+	//jsonObject.testCases = completeShuffle(randomSeed,jsonObject.testCases);
 	let testCases = [];
 	for (let i = 0; i < jsonObject.testCases.length; i++) {
 		let testCaseJson = jsonObject.testCases[i];
@@ -896,7 +913,7 @@ function jsonToTest(jsonString) {
 
 		console.log(distractorLinePatterns);
 
-		let demo = !!testCaseJson.demo;
+		let demo = false;//!!testCaseJson.demo;
 
 		let testCase = new TestCase(countdown, dotPattern, distractorLinePatterns, demo);
 		testCases.push(testCase);
@@ -972,5 +989,5 @@ jsonRequest.onreadystatechange = function() {
 		});
 	}
 };
-jsonRequest.open("GET", "Version1.json");
+jsonRequest.open("GET", "getNextTest");
 jsonRequest.send();

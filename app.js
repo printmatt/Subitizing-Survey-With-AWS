@@ -27,7 +27,6 @@ app.post("/uploadGenderAge",jsonParser,function(req,res){
 	console.log(req.body);
 })
 
-
 app.post("/experimentEnded",jsonParser, function(req,res){
 	var params = req.body;
 	console.log(params);
