@@ -20,7 +20,7 @@ function hashString(text) {
 	return hash.update(text).digest("base64");
 }
 
-const dataFile = fs.createWriteStream("data.csv", {"flasg": "a"});
+const dataFile = fs.createWriteStream("data.csv", {"flags": "a"});
 
 const app = express();
 
