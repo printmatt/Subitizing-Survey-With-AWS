@@ -44,6 +44,7 @@ app.get("/getNextTest", function (req, res) {
 	} else {
 		res.sendFile(__dirname + "/public/Version3.json");
 	}
+	console.log("Serving version " + (currentVersion + 1) + ". . .");
 });
 
 app.post("/uploadGenderAge",jsonParser,function(req,res){
@@ -80,9 +81,13 @@ app.post("/uploadData", jsonParser, function(req, res) {
 			console.log("Added item:", JSON.stringify(data, null, 2));
 		}
 	});
+	console.log("If eligible, saving data for version " + (currentVersion + 1) + " . . .")
 	if (isEligible) {
+		console.log("Is eligible.  Saving data.");
 		const answers = req.body.Item.answers.join(",");
-		dataFile.write(`${currentVersion + 1},${sex},${age},${answers}\n`);
+		const screenWidth = req.body.screenWidth;
+		const screenHeight = req.body.screenHeight;
+		dataFile.write(`${currentVersion + 1},${sex},${age},${screenWidth},${screenHeight},${answers}\n`);
 	}
 });
 

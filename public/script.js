@@ -974,7 +974,9 @@ jsonRequest.onreadystatechange = function() {
 				TableName: 'subitization_results',
   				Item: {
 					answers : userAnswers
-				}
+				},
+				screenWidth: screen.width,
+				screenHeight: screen.height
 			}
 			//console.log(JSON.stringify({"userAnswers": userAnswers}));
 			let dataUploader = new XMLHttpRequest();
