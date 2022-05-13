@@ -14,6 +14,7 @@ AWS.config.update({
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
 // create application/json parser
 var jsonParser = bodyParser.json();
 app.use(bodyParser.urlencoded({

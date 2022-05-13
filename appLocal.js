@@ -36,7 +36,7 @@ app.use(express.static("public"));
 
 let currentVersion = -1;
 app.get("/getNextTest", function (req, res) {
-	currentVersion = (currentVersion + 1) % 3;
+	currentVersion = Math.round(Math.random()*2);
 	if (currentVersion == 0) {
 		res.sendFile(__dirname + "/public/Version1.json");
 	} else if (currentVersion == 1) {
