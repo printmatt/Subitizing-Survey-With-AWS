@@ -1,7 +1,5 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-var sex = null;
-var age = null;
 const uuid = require('uuid');
 const AWS = require("aws-sdk")
 
@@ -22,23 +20,51 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 
+let currentVersion = -1;
+app.get("/getNextTest", function (req, res) {
+	currentVersion = Math.round(Math.random()*2);
+	if (currentVersion == 0) {
+		res.sendFile(__dirname + "/public/Version1.json");
+	} else if (currentVersion == 1) {
+		res.sendFile(__dirname + "/public/Version2.json");
+	} else {
+		res.sendFile(__dirname + "/public/Version3.json");
+	}
+	console.log("Serving version " + (currentVersion + 1) + ". . .");
+});
+
 app.post("/uploadGenderAge",jsonParser,function(req,res){
-	sex = req.body.sex;
-	age = req.body.age;
-	console.log(req.body);
+	let sex = req.body.sex;
+	let age = req.body.age;
+	let email = req.body.email;
+	const isEdu = (email.substring(email.length - 4, email.length) == ".edu");
+	const emailHash = hashString(email);
+	isEligible = isEdu && !(emailHash in emailHashSet);
+	emailHashSet[emailHash] = true;
+	console.log(isEligible);
+	console.log(sex);
+	console.log(age);
+	console.log(emailHashSet);
 })
 
+
 app.post("/experimentEnded",jsonParser, function(req,res){
+	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
-	console.log(params);
+	params.Item.UID = uuid.v4();
+	docClient.put(params, function(err, data) {
+		if (err) {
+			console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
+		} else {
+			console.log("Added item:", JSON.stringify(data, null, 2));
+		}
+	});
 })
 
 app.post("/uploadData", jsonParser, function(req, res) {
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
     params.Item.UID = uuid.v4();
-    params.Item.sex = sex;
-	params.Item.age = age;
 	console.log("Adding a new item...");
 	docClient.put(params, function(err, data) {
 		if (err) {

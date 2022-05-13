@@ -1,9 +1,16 @@
+var currentUserAnswers = [];
+var sex = null;
+var age = null;
+var email = null;
+var version = null;
+
 function enforceScreenSize() {
 	const frameTable = document.getElementById("frameTable");
 	const blocker = document.getElementById("blocker");
 	if ((window.innerWidth < frameTable.offsetWidth) || (window.innerHeight < frameTable.offsetHeight)) {
 		blocker.style.display = "block";
-	} else {
+	}
+	else {
 		blocker.style.display = "none";
 	}
 }
@@ -31,24 +38,6 @@ const canvas = document.getElementById("canvas");
 const context = canvas.getContext("2d");
 
 // Number buttons
-
-/*
-const option3 = document.getElementById("option3");
-const option4 = document.getElementById("option4");
-const option5 = document.getElementById("option5");
-const option6 = document.getElementById("option6");
-const option7 = document.getElementById("option7");
-const option8 = document.getElementById("option8");
-const option9 = document.getElementById("option9");
-
-const options = [option3,
-		option4,
-		option5,
-		option6,
-		option7,
-		option8,
-		option9];
-*/
 
 const numberButtons = document.querySelectorAll(".numberButton");
 
@@ -120,6 +109,18 @@ function endExperiment() {
 
 	console.log(percentAnswer);
 	var params = {
+		TableName: 'subitization_results',
+		  Item: {
+			sex: sex,
+			age: age,
+			email: email,
+			answers : currentUserAnswers,
+			version: version,
+			screenWidth: screen.width,
+			screenHeight: screen.height
+		},
+		screenWidth: screen.width,
+		screenHeight: screen.height,
 		CompletedPercentage : percentAnswer
 	}
 	//console.log(JSON.stringify({"userAnswers": userAnswers}));
@@ -693,6 +694,18 @@ class Test {
 	}
 
 	getStarted(callback) {
+		var ele = document.getElementsByName('sex');
+              
+		for(var i = 0; i < ele.length; i++) {
+				
+			if(ele[i].type="radio") {
+				
+				if(ele[i].checked)
+					sex = ele[i].value
+			}
+		}
+		age = document.getElementById('age').value;
+		email = document.getElementById('email').value;
 		dialogueContainer.style.display = "none";
 		continueButton.disabled = true;
 		continueButton.style.visibility = "hidden";
@@ -735,6 +748,7 @@ class Test {
 	saveAnswer(callback, answer, isCorrect) {
 		//console.log(answer);
 		this.userAnswers.push(answer);
+		currentUserAnswers.push(answer);
 		console.log({"userAnswers": this.userAnswers});
 		timeouts.push(setTimeout(this.nextTestCase.bind(this, callback)));
 		if (isCorrect) this.numCorrect++;
@@ -809,6 +823,8 @@ class Test {
 const randomSeed = "test_1";
 function jsonToTest(jsonString) {
 	let jsonObject = JSON.parse(jsonString);
+	version = jsonObject.version;
+	console.log("Version is " + version);
 	//console.log("Version Number: " + jsonObject.version);
 	//const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
 	//jsonObject.testCases = completeShuffle(randomSeed,jsonObject.testCases);
@@ -973,7 +989,13 @@ jsonRequest.onreadystatechange = function() {
 			var params = {
 				TableName: 'subitization_results',
   				Item: {
-					answers : userAnswers
+					sex: sex,
+					age: age,
+					email: email,
+					answers : userAnswers,
+					version: version,
+					screenWidth: screen.width,
+					screenHeight: screen.height
 				},
 				screenWidth: screen.width,
 				screenHeight: screen.height
