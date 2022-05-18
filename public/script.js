@@ -1,3 +1,5 @@
+const NUM_DEMO_CASES = 3;
+
 function enforceScreenSize() {
 	const frameTable = document.getElementById("frameTable");
 	const blocker = document.getElementById("blocker");
@@ -583,11 +585,12 @@ class TestCase {
 		this.countdown = countdown;
 		this.dotPattern = dotPattern;
 		this.distractorLinePatterns = distractorLinePatterns;
-		this.demo = demo;
+		//this.demo = demo;
 		this.prompt = new Prompt();
 	}
 
-	runTestCase(callback, isFirstTestCase, isLastTestCase) {
+	runTestCase(callback, isFirstTestCase, isLastTestCase, demo) {
+		this.demo = demo;
 		const nextStep = this.hideEndExperimentButton.bind(this, callback, isLastTestCase);
 		if (isFirstTestCase) {
 			this.countdown.tick(nextStep);
@@ -629,6 +632,32 @@ class TestCase {
 		} else {
 			timeouts.push(setTimeout(callback.bind(this, answer, answer == this.dotPattern.dots.length), 0));
 		}
+	}
+}
+
+class DemoTransitionScreen {
+	constructor() {
+	}
+
+	show(callback) {
+		this.eventListener = this.buttonClicked.bind(this, callback);
+		nextButton.addEventListener("click", this.eventListener);
+		nextButton.style.visibility = "visible";
+		nextButton.disabled = false;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.textAlign = "center";
+		context.fillStyle = "black";
+		context.font = "25px Arial";
+		context.fillText("Now it's time to end the demo.", canvas.width / 2, canvas.height / 3);
+		context.fillText("Click the NEXT button to continue.", canvas.width / 2, canvas.height / 2);
+	}
+
+	buttonClicked(callback) {
+		nextButton.removeEventListener("click", this.eventListener);
+		nextButton.style.visibility = "hidden";
+		nextButton.disabled = true;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		timeouts.push(setTimeout(callback, 0));
 	}
 }
 
@@ -704,6 +733,12 @@ class Test {
 	nextTestCase(callback) {
 		if (this.currentTestCaseIndex >= this.testCases.length) {
 			timeouts.push(setTimeout(this.askToSubmit.bind(this, callback), 0));
+		} else if (this.currentTestCaseIndex == NUM_DEMO_CASES) {
+			const saveAnswerCallback = this.saveAnswer.bind(this, callback);
+			const runTestCaseCallback = this.testCases[this.currentTestCaseIndex].runTestCase.bind(this.testCases[this.currentTestCaseIndex], saveAnswerCallback, true, false, false);
+			const dmeoScreen = new DemoTransitionScreen();
+			dmeoScreen.show(runTestCaseCallback);
+			this.currentTestCaseIndex++;
 		} else {
 			let isFirstTestCase;
 			let isLastTestCase;
@@ -717,7 +752,8 @@ class Test {
 			} else {
 				isLastTestCase = false;
 			}
-			this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), isFirstTestCase, isLastTestCase);
+			const demoMode = (this.currentTestCaseIndex < NUM_DEMO_CASES);
+			this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), isFirstTestCase, isLastTestCase, demoMode);
 				// Run the test case and have it call the saveAnswer function once it's finished,
 				// passing the callback that will be called after the entire test is finished.  In
 				// this way, the callback could be passed through the entire process rather than having
