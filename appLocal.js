@@ -1,10 +1,10 @@
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const uuid = require('uuid');
 const fs = require("fs");
 const crypto = require("crypto");
-var sex = null;
-var age = null;
+
 var isEligible = null;
 var emailHashSet = {}
 const AWS = require("aws-sdk")
@@ -36,7 +36,7 @@ app.use(express.static("public"));
 
 let currentVersion = -1;
 app.get("/getNextTest", function (req, res) {
-	currentVersion = (currentVersion + 1) % 3;
+	currentVersion = Math.round(Math.random()*2);
 	if (currentVersion == 0) {
 		res.sendFile(__dirname + "/public/Version1.json");
 	} else if (currentVersion == 1) {
@@ -48,8 +48,8 @@ app.get("/getNextTest", function (req, res) {
 });
 
 app.post("/uploadGenderAge",jsonParser,function(req,res){
-	sex = req.body.sex;
-	age = req.body.age;
+	let sex = req.body.sex;
+	let age = req.body.age;
 	let email = req.body.email;
 	const isEdu = (email.substring(email.length - 4, email.length) == ".edu");
 	const emailHash = hashString(email);
@@ -63,15 +63,15 @@ app.post("/uploadGenderAge",jsonParser,function(req,res){
 
 app.post("/experimentEnded",jsonParser, function(req,res){
 	var params = req.body;
+	params.Item.UID = uuid.v4();
 	console.log(params);
 	dataFile.write(`${currentVersion + 1},Dropout,${params.CompletedPercentage}\n`);
 })
+
 app.post("/uploadData", jsonParser, function(req, res) {
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
     params.Item.UID = uuid.v4();
-	params.Item.sex = sex;
-	params.Item.age = age;
 	console.log(params.Item);
 	console.log("Adding a new item...");
 	docClient.put(params, function(err, data) {
@@ -87,6 +87,8 @@ app.post("/uploadData", jsonParser, function(req, res) {
 		const answers = req.body.Item.answers.join(",");
 		const screenWidth = req.body.screenWidth;
 		const screenHeight = req.body.screenHeight;
+		const sex = params.Item.sex;
+		const age = params.Item.age;
 		dataFile.write(`${currentVersion + 1},${sex},${age},${screenWidth},${screenHeight},${answers}\n`);
 	}
 });
@@ -94,3 +96,4 @@ app.post("/uploadData", jsonParser, function(req, res) {
 app.listen(PORT, function() {
 	console.log("Listening on port " + PORT + " . . .");
 });
+
