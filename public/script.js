@@ -6,6 +6,8 @@ var age = null;
 var email = null;
 var version = null;
 
+const DOT_TO_DIAGONAL = 8 / Math.sqrt((371 * 371) + (280 * 280));
+
 function enforceScreenSize() {
 	const frameTable = document.getElementById("frameTable");
 	const blocker = document.getElementById("blocker");
@@ -236,11 +238,11 @@ console.log(multiplyMatrixByMatrix([[1, 2, 3],
 */
 
 class Dot {
-	constructor(xCoord, yCoord, color, radius) {
+	constructor(xCoord, yCoord, color) {
 		this.xCoord = xCoord;
 		this.yCoord = yCoord;
 		this.color = color;
-		this.radius = radius;
+		this.radius = DOT_TO_DIAGONAL * Math.sqrt((canvas.width * canvas.width) + (canvas.height * canvas.height));
 		this.transformation = cloneMatrix(identityMatrix);
 	}
 
@@ -880,28 +882,28 @@ function jsonToTest(jsonString) {
 				subPattern = createUniformDotPattern(subPatternJson.numberOfDots,
 						subPatternJson.durationInMilliseconds,
 						subPatternJson.colorPalette,
-						subPatternJson.minRadius,
-						subPatternJson.maxRadius);
+						subPatternJson.minRadius);
+						//subPatternJson.maxRadius);
 			} else if (subPatternJson.type == "line") {
 				subPattern = createLinearDotPattern(subPatternJson.numberOfDots,
 						subPatternJson.spacing,
 						subPatternJson.durationInMilliseconds,
-						subPatternJson.color,
-						subPatternJson.dotRadius);
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
 			} else if (subPatternJson.type == "circle") {
 				subPattern = createCircularDotPattern(subPatternJson.numberOfDots,
 						subPatternJson.circleRadius,
 						subPatternJson.durationInMilliseconds,
-						subPatternJson.color,
-						subPatternJson.dotRadius);
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
 			} else if (subPatternJson.type == "grid") {
 				subPattern = createGridDotPattern(subPatternJson.numberOfRows,
 						subPatternJson.numberOfColumns,
 						subPatternJson.spacingBetweenRows,
 						subPatternJson.spacingBetweenColumns,
 						subPatternJson.durationInMilliseconds,
-						subPatternJson.color,
-						subPatternJson.dotRadius);
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
 			} else if (subPatternJson.type == "angle") {
 				subPattern = createAngleDotPattern(subPatternJson.numberOfDotsOnFirstLine,
 						subPatternJson.numberOfDotsOnSecondLine,
@@ -909,21 +911,21 @@ function jsonToTest(jsonString) {
 						subPatternJson.secondLineSpacing,
 						subPatternJson.angleInDegrees * (Math.PI / 180),
 						subPatternJson.durationInMilliseconds,
-						subPatternJson.color,
-						subPatternJson.dotRadius);
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
 			} else if (subPatternJson.type == "HCP") {
 				subPattern = createHCPDotPattern(subPatternJson.numberOfRows,
 						subPatternJson.numberOfDotsPerRow,
 						subPatternJson.spacingBetweenRows,
 						subPatternJson.spacingBetweenDots,
 						subPatternJson.durationInMilliseconds,
-						subPatternJson.color,
-						subPatternJson.dotRadius);
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
 			} else if (subPatternJson.type == "dot") {
 				subPattern = new Dot(subPatternJson.xCoord,
 							subPatternJson.yCoord,
-							subPatternJson.color,
-							subPatternJson.dotRadius);
+							subPatternJson.color);
+							//subPatternJson.dotRadius);
 			}
 			let xCoordStdDev = (subPatternJson.xCoordStdDev == undefined) ? 0 : subPatternJson.xCoordStdDev;
 			let yCoordStdDev = (subPatternJson.yCoordStdDev == undefined) ? 0 : subPatternJson.yCoordStdDev;
