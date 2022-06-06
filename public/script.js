@@ -718,7 +718,7 @@ class Test {
 				continueButton.style.visibility = "visible";
 				form.eventListener = this.getStarted.bind(this,callback);
 				form.addEventListener("submit",form.eventListener);
-				}
+			}
 		}.bind(this);
 		dialogueRequest.open("GET", "dialogue/genderAge.html");
 		dialogueRequest.send();
