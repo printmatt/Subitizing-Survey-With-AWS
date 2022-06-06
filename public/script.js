@@ -303,10 +303,14 @@ class DotPattern {
 	// Draw the dot pattern for the specified number of milliseconds,
 	// then clear the canvas and call the specified callback function.
 	drawForSomeTime(callback, transformation = identityMatrix) {
+		canvas.style.cursor = "none";
 		this.draw(transformation);
 		timeouts.push(setTimeout(function() {
 			context.clearRect(0, 0, canvas.width, canvas.height);
-			timeouts.push(setTimeout(callback, 0)); // setTimeout is used to call the callback asynchronously.
+			timeouts.push(setTimeout(function() {
+				canvas.style.cursor = "auto";
+				callback();
+			}, 0)); // setTimeout is used to call the callback asynchronously.
 		}, this.durationInMilliseconds));
 	}
 
