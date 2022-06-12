@@ -1,6 +1,8 @@
 var fs = require('fs');
 const { parse } = require('csv-parse');
 const { stringify } = require('csv-stringify');
+const objectsToCsv = require('objects-to-csv');
+
 var data = null
 
 // parse in data and start processing
@@ -12,14 +14,20 @@ var parser = parse({ columns: true }, function (err, records) {
         console.log(data[i].version)
         data[i].correctAns = []
         data[i].correctAns = compareAns(userAns, data[i].version)
+        data[i].answers = userAns.map((ans) =>{
+            return parseInt(ans["S"]);
+        })
 
     }
 
     fs.writeFileSync('results.json',JSON.stringify(data));
+    new objectsToCsv(data).toDisk('./results.csv');
 
 
 });
 
+
+// Pipe the data from CSV file to be parsed
 fs.createReadStream('subitizingResult.csv').pipe(parser);
 
 
