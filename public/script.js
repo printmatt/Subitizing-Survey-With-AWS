@@ -6,7 +6,7 @@ var age = null;
 var email = null;
 var version = null;
 
-const DOT_TO_DIAGONAL = 8 / Math.sqrt((371 * 371) + (280 * 280));
+let DOT_TO_DIAGONAL = 8 / Math.sqrt((371 * 371) + (280 * 280));
 
 function enforceScreenSize() {
 	const frameTable = document.getElementById("frameTable");
@@ -19,8 +19,25 @@ function enforceScreenSize() {
 	}
 }
 
-window.addEventListener("resize", enforceScreenSize);
-enforceScreenSize();
+const canvas = document.getElementById("canvas");
+const context = canvas.getContext("2d");
+
+// Set the dimensions of the canvas to fit the frame.
+function fitCanvasToFrame() {
+	canvas.width = canvas.offsetWidth;
+	canvas.height = canvas.offsetHeight;
+}
+fitCanvasToFrame();
+
+//window.addEventListener("resize", enforceScreenSize);
+window.addEventListener("resize", function() {
+	console.log({windowWidth: window.innerWidth,
+	windowHeight: window.innerHeight,
+frameTableWidth: frameTable.offsetWidth,
+frameTableHweight: frameTable.offsetHeight});
+fitCanvasToFrame();
+});
+//enforceScreenSize();
 
 // Randomly samples a normal distribution using the Box-Muller Transform
 // (Not sure if I'm implementing the formula exactly correctly.)
@@ -38,9 +55,6 @@ function chooseRandomly(arr) {
 	return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const canvas = document.getElementById("canvas");
-const context = canvas.getContext("2d");
-
 // Number buttons
 
 const numberButtons = document.querySelectorAll(".numberButton");
@@ -48,7 +62,7 @@ const numberButtons = document.querySelectorAll(".numberButton");
 // Make sure the number choices are disabled once the page loads.
 for (let i = 0; i < numberButtons.length; i++) {
 	numberButtons[i].disabled = true;
-	numberButtons[i].style.visibility = "hidden";
+	//numberButtons[i].style.visibility = "hidden";
 }
 
 /*
@@ -58,13 +72,6 @@ function drawDots(canvas, context, rows, cols, numberOfDots, dotRadius) {
 	let flattenedPos = 0;
 }
 */
-
-// Set the dimensions of the canvas to fit the frame.
-function fitCanvasToFrame() {
-	canvas.width = canvas.offsetWidth;
-	canvas.height = canvas.offsetHeight;
-}
-fitCanvasToFrame();
 
 const continueButton = document.getElementById("continue");
 const startButton = document.getElementById("start");

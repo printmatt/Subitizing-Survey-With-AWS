@@ -40,8 +40,8 @@ table#frameTable {
 	transform: translate(-50%, -50%);
 	margin: 0;
 	padding: 0;
-	width: 1000px;
-	height: 600px;
+	width: 97%;
+	height: 95%;
 	border: solid 1px black;
 }
 
