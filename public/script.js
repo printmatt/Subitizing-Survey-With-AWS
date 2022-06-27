@@ -849,18 +849,20 @@ class Test {
 		*/
 		const feedbackStr = this.numCorrect + " out of " + this.testCases.length;
 		let dialogueRequest = new XMLHttpRequest();
+		let userFeedback;
 		dialogueRequest.onreadystatechange = function() {
 			if ((dialogueRequest.readyState == 4) && (dialogueRequest.status == 200)) {
+				userFeedback = document.getElementById("userFeedback").value;
 				dialogueContainer.innerHTML = dialogueRequest.response;
 				document.getElementById("feedback").innerText = feedbackStr;
+				timeouts.push(setTimeout(callback.bind(null, {userAnswers: this.userAnswers, userFeedback: userFeedback}), 0));
 			}
-		}
+		}.bind(this);
 		dialogueRequest.open("GET", "dialogue/afterSubmitting.html");
 		dialogueRequest.send();
 
 		endExperimentButton.disabled = true;
 		endExperimentButton.style.visibility = "hidden";
-		timeouts.push(setTimeout(callback.bind(null, this.userAnswers), 0));
 
 		progress.style.width = "100%";
 		progress.innerHTML = "100%";
@@ -1032,8 +1034,8 @@ let jsonRequest = new XMLHttpRequest();
 jsonRequest.onreadystatechange = function() {
 	if ((jsonRequest.readyState == 4) && (jsonRequest.status == 200)) {
 		let test = jsonToTest(jsonRequest.response);
-		test.runTest(function(userAnswers) {
-			console.log(userAnswers);
+		test.runTest(function(userResponse) {
+			console.log(userResponse);
 			console.log("Test completed; sending user answers to the server.");
 			var params = {
 				TableName: 'subitization_results',
@@ -1041,13 +1043,15 @@ jsonRequest.onreadystatechange = function() {
 					sex: sex,
 					age: age,
 					email: email,
-					answers : userAnswers,
+					answers : userResponse.userAnswers,
 					version: version,
 					screenWidth: screen.width,
-					screenHeight: screen.height
+					screenHeight: screen.height,
+					userFeedback: userResponse.userFeedback
 				},
 				screenWidth: screen.width,
-				screenHeight: screen.height
+				screenHeight: screen.height,
+				userFeedback: userResponse.userFeedback
 			}
 			//console.log(JSON.stringify({"userAnswers": userAnswers}));
 			let dataUploader = new XMLHttpRequest();

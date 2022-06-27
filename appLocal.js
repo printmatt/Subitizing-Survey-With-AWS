@@ -89,7 +89,9 @@ app.post("/uploadData", jsonParser, function(req, res) {
 		const screenHeight = req.body.screenHeight;
 		const sex = params.Item.sex;
 		const age = params.Item.age;
-		dataFile.write(`${currentVersion + 1},${sex},${age},${screenWidth},${screenHeight},${answers}\n`);
+		const userFeedback = params.Item.userFeedback;
+		escapedUserFeedback = userFeedback.replace("\"", "\"\"");
+		dataFile.write(`${currentVersion + 1},${sex},${age},${screenWidth},${screenHeight},${answers},\"${escapedUserFeedback}\"\n`);
 	}
 });
 
