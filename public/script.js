@@ -62,7 +62,7 @@ const numberButtons = document.querySelectorAll(".numberButton");
 // Make sure the number choices are disabled once the page loads.
 for (let i = 0; i < numberButtons.length; i++) {
 	numberButtons[i].disabled = true;
-	//numberButtons[i].style.visibility = "hidden";
+	numberButtons[i].style.visibility = "hidden";
 }
 
 /*
