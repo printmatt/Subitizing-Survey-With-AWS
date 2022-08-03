@@ -1,0 +1,612 @@
+{
+  distractorLinePatterns: [
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    },
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    }
+  ],
+  countdown: 4,
+  durationOfDotPatternInMilliseconds: 500,
+  testCases: [
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  ]
+}
+{
+  distractorLinePatterns: [
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    },
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    }
+  ],
+  countdown: 4,
+  durationOfDotPatternInMilliseconds: 500,
+  testCases: [
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  ]
+}
+{
+  distractorLinePatterns: [
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    },
+    {
+      numberOfDistractorLines: 100,
+      durationInMilliseconds: 150,
+      colorPalette: [Array],
+      minWidth: 1,
+      maxWidth: 1
+    }
+  ],
+  countdown: 4,
+  durationOfDotPatternInMilliseconds: 500,
+  testCases: [
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [ [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ],
+    [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  ]
+}
