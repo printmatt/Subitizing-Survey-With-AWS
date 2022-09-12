@@ -18,14 +18,20 @@ const distractorLinePatterns = [
 	}
 ];
 
+const randoms = [1, 1, 1, 1, 2, 2, 2, 2, 2, 2];
+
 class TestCase {
+}
+
+class TestCaseFromFile extends TestCase {
 	constructor(fileName) {
+		super();
 		this.fileName = fileName;
 		this.name = this.fileName.slice(0, this.fileName.length - 5);
 	}
 	// Using a builder function to bundle async code with construction
 	static async create(fileName) {
-		const testCase = new TestCase(fileName);
+		const testCase = new TestCaseFromFile(fileName);
 		await testCase.loadFile();
 		testCase.parseName();
 		return testCase;
@@ -42,6 +48,21 @@ class TestCase {
 		this.version = parseInt(parsedName[4]);
 		// Group all versions of the same pattern into the same class.
 		this.patternClass = parsedName[1] + parsedName[2] + parsedName[3];
+	}
+}
+
+class TestCaseFromRandom extends TestCase {
+	constructor(numberOfDots) {
+		super();
+		this.numberOfDots = numberOfDots;
+		this.contents = {"dotPatterns": []};
+		for (let i = 0; i < this.numberOfDots; i++) {
+			this.contents.dotPatterns.push({"type": "dot",
+				"color": "#000000",
+				"dotRadius": 8,
+				"xCoord": Math.random(),
+				"yCoord": Math.random()});
+		}
 	}
 }
 
@@ -62,7 +83,7 @@ async function createTests() {
 	// Create array of TestCase objects.
 	const testCases = [];
 	for (let i = 0; i < fileNames.length; i++) {
-		testCases.push(await TestCase.create(fileNames[i]));
+		testCases.push(await TestCaseFromFile.create(fileNames[i]));
 	}
 	const inAllTests = []; // All test cases that go into all tests.
 	// Create a dictionary where each pattern class (key) maps to an array of version TestCases (value)
@@ -92,6 +113,24 @@ async function createTests() {
 			tests[i].push(versions[i]);
 		}
 	}
+
+	// Add random cases
+	for (let i = 0; i < tests.length; i++) {
+		for (let j = 0; j < 10; j++) {
+			for (let k = 0; k < randoms[j]; k++) {
+				tests[i].push(new TestCaseFromRandom(j + 1));
+			}
+		}
+	}
+
+	// Ass three more to bring the count up to 60.
+	for (let i = 0; i < tests.length; i++) {
+		for (let j = 0; j < 3; j++) {
+			const numberOfDots = 5 + Math.floor(Math.random() * 6);
+			tests[i].push(new TestCaseFromRandom(numberOfDots));
+		}
+	}
+
 	const testsJson = [];
 	for (let i = 0; i < tests.length; i++) {
 		const testJson = {version: i + 1, testCases: []};
