@@ -55,14 +55,37 @@ class TestCaseFromRandom extends TestCase {
 	constructor(numberOfDots) {
 		super();
 		this.numberOfDots = numberOfDots;
-		this.contents = {"dotPatterns": []};
-		for (let i = 0; i < this.numberOfDots; i++) {
-			this.contents.dotPatterns.push({"type": "dot",
-				"color": "#000000",
-				"dotRadius": 8,
-				"xCoord": Math.random(),
-				"yCoord": Math.random()});
+		this.contents = this.placeDots(this.numberOfDots, 0.15);
+	}
+	placeDots(numberOfDots, minDistance) {
+		let dotsPlaced =  {"dotPatterns": []};
+		for (let i = 0; i < numberOfDots; i++) {
+			let dotsDistanced = false;
+			let newDot = null;
+			while (!dotsDistanced) {
+				newDot = {"type": "dot",
+					"color": "#000000",
+					"dotRadius": 8,
+					"xCoord": Math.random(),
+					"yCoord": Math.random()};
+				console.log(newDot);
+				let foundCloseDot = false;
+				for (const dot of dotsPlaced.dotPatterns) {
+					const dx = newDot.xCoord - dot.xCoord;
+					const dy = newDot.yCoord - dot.yCoord;
+					if (dx * dx + dy * dy < minDistance * minDistance) {
+						foundCloseDot = true;
+						break;
+					}
+				}
+				if (!foundCloseDot) {
+					dotsDistanced = true;
+				}
+				console.log(newDot);
+			}
+			dotsPlaced.dotPatterns.push(newDot);
 		}
+		return dotsPlaced;
 	}
 }
 
