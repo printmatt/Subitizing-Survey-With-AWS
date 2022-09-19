@@ -20,8 +20,8 @@ var parser = parse({ columns: true }, function (err, records) {
 
     }
 
-    fs.writeFileSync('results.json',JSON.stringify(data));
-    new objectsToCsv(data).toDisk('./results.csv');
+    fs.writeFileSync('AWSresults.json',JSON.stringify(data));
+    new objectsToCsv(data).toDisk('./AWSresults.csv');
 
 
 });

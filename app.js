@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const uuid = require('uuid');
 const AWS = require("aws-sdk")
+require('dotenv').config();
 
 AWS.config.update({
 	region: "us-east-1",
