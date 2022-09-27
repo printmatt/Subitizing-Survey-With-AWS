@@ -66,8 +66,8 @@ class TestCaseFromRandom extends TestCase {
 				newDot = {"type": "dot",
 					"color": "#000000",
 					"dotRadius": 8,
-					"xCoord": Math.random(),
-					"yCoord": Math.random()};
+					"xCoord": 0.1 + Math.random()*0.8,
+					"yCoord": 0.1 + Math.random()*0.8};
 				console.log(newDot);
 				let foundCloseDot = false;
 				for (const dot of dotsPlaced.dotPatterns) {
