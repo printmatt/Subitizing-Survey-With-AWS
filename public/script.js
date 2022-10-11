@@ -676,9 +676,11 @@ class DemoTransitionScreen {
 }
 
 class Test {
-	constructor(testCases) {
+	constructor(testCases, demoCases) {
 		this.testCases = testCases;
+		this.demoCases = demoCases;
 		this.currentTestCaseIndex = 0;
+		this.currentDemoCaseIndex = 0;
 		this.userAnswers = [];
 		this.numCorrect = 0;
 		document.addEventListener("destroyData", this.destroyData.bind(this));
@@ -753,18 +755,33 @@ class Test {
 		continueButton.style.visibility = "hidden";
 		endExperimentButton.disabled = false;
 		endExperimentButton.style.visibility = "visible";
-		timeouts.push(setTimeout(this.nextTestCase.bind(this, callback), 0));
+		timeouts.push(setTimeout(this.nextDemoCase.bind(this, callback), 0));
+	}
+
+	nextDemoCase(callback) {
+		if (this.currentDemoCaseIndex >= this.demoCases.length) {
+			const demoScreen = new DemoTransitionScreen();
+			demoScreen.show(this.nextTestCase.bind(this, callback));
+		} else {
+			this.demoCases[this.currentDemoCaseIndex].runTestCase(this.nextDemoCase.bind(this, callback), (this.currentDemoCaseIndex == 0), false, true);
+			this.currentDemoCaseIndex++;
+			percentAnswer = Math.floor((this.currentTestCaseIndex - 1 + this.demoCases.length) / (this.testCases.length + this.demoCases.length)*100) + "%";
+			progress.style.width = percentAnswer;
+			progress.innerHTML = percentAnswer;
+		}
 	}
 
 	nextTestCase(callback) {
 		if (this.currentTestCaseIndex >= this.testCases.length) {
 			timeouts.push(setTimeout(this.askToSubmit.bind(this, callback), 0));
+		/*
 		} else if (this.currentTestCaseIndex == NUM_DEMO_CASES) {
 			const saveAnswerCallback = this.saveAnswer.bind(this, callback);
 			const runTestCaseCallback = this.testCases[this.currentTestCaseIndex].runTestCase.bind(this.testCases[this.currentTestCaseIndex], saveAnswerCallback, true, false, false);
 			const dmeoScreen = new DemoTransitionScreen();
 			dmeoScreen.show(runTestCaseCallback);
 			this.currentTestCaseIndex++;
+		*/
 		} else {
 			let isFirstTestCase;
 			let isLastTestCase;
@@ -778,8 +795,7 @@ class Test {
 			} else {
 				isLastTestCase = false;
 			}
-			const demoMode = (this.currentTestCaseIndex < NUM_DEMO_CASES);
-			this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), isFirstTestCase, isLastTestCase, demoMode);
+			this.testCases[this.currentTestCaseIndex].runTestCase(this.saveAnswer.bind(this, callback), isFirstTestCase, isLastTestCase, false);
 				// Run the test case and have it call the saveAnswer function once it's finished,
 				// passing the callback that will be called after the entire test is finished.  In
 				// this way, the callback could be passed through the entire process rather than having
@@ -788,7 +804,7 @@ class Test {
 				// callback included here.  The test case will call saveAnswer with the provided callback
 				// as the first parameter and the number the user clicked as the second parameter.
 			this.currentTestCaseIndex++;
-			percentAnswer = Math.floor((this.currentTestCaseIndex-1)/this.testCases.length*100) + "%";
+			percentAnswer = Math.floor((this.currentTestCaseIndex - 1 + this.demoCases.length) / (this.testCases.length + this.demoCases.length)*100) + "%";
 			progress.style.width = percentAnswer;
 			progress.innerHTML = percentAnswer;
 		}
@@ -869,124 +885,128 @@ class Test {
 	}
 }
 
+function parseTestCaseJson(testCaseJson) {
+	let countdown = new Countdown(testCaseJson.countdown);
+
+	let dotPattern = new DotPattern([], testCaseJson.durationOfDotPatternInMilliseconds);
+
+	const dotPatternsJson = testCaseJson.dotPatterns;
+
+	for (const subPatternJson of dotPatternsJson) {
+		let subPattern;
+		if (subPatternJson.type == "random") {
+			subPattern = createUniformDotPattern(subPatternJson.numberOfDots,
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.colorPalette,
+					subPatternJson.minRadius);
+					//subPatternJson.maxRadius);
+		} else if (subPatternJson.type == "line") {
+			subPattern = createLinearDotPattern(subPatternJson.numberOfDots,
+					subPatternJson.spacing,
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.color);
+					//subPatternJson.dotRadius);
+		} else if (subPatternJson.type == "circle") {
+			subPattern = createCircularDotPattern(subPatternJson.numberOfDots,
+					subPatternJson.circleRadius,
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.color);
+					//subPatternJson.dotRadius);
+		} else if (subPatternJson.type == "grid") {
+			subPattern = createGridDotPattern(subPatternJson.numberOfRows,
+					subPatternJson.numberOfColumns,
+					subPatternJson.spacingBetweenRows,
+					subPatternJson.spacingBetweenColumns,
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.color);
+					//subPatternJson.dotRadius);
+		} else if (subPatternJson.type == "angle") {
+			subPattern = createAngleDotPattern(subPatternJson.numberOfDotsOnFirstLine,
+					subPatternJson.numberOfDotsOnSecondLine,
+					subPatternJson.firstLineSpacing,
+					subPatternJson.secondLineSpacing,
+					subPatternJson.angleInDegrees * (Math.PI / 180),
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.color);
+					//subPatternJson.dotRadius);
+		} else if (subPatternJson.type == "HCP") {
+			subPattern = createHCPDotPattern(subPatternJson.numberOfRows,
+					subPatternJson.numberOfDotsPerRow,
+					subPatternJson.spacingBetweenRows,
+					subPatternJson.spacingBetweenDots,
+					subPatternJson.durationInMilliseconds,
+					subPatternJson.color);
+					//subPatternJson.dotRadius);
+		} else if (subPatternJson.type == "dot") {
+			subPattern = new Dot(subPatternJson.xCoord,
+						subPatternJson.yCoord,
+						subPatternJson.color);
+						//subPatternJson.dotRadius);
+		}
+		let xCoordStdDev = (subPatternJson.xCoordStdDev == undefined) ? 0 : subPatternJson.xCoordStdDev;
+		let yCoordStdDev = (subPatternJson.yCoordStdDev == undefined) ? 0 : subPatternJson.yCoordStdDev;
+		let dotRadiusStdDev = (subPatternJson.dotRadiusStdDev == undefined) ? 0 : subPatternJson.dotRadiusStdDev;
+		subPattern.mutate(xCoordStdDev, yCoordStdDev, dotRadiusStdDev);
+		let translationX = (subPatternJson.translationX == undefined) ? 0 : subPatternJson.translationX;
+		let translationY = (subPatternJson.translationY == undefined) ? 0 : subPatternJson.translationY;
+		let rotationInDegrees = (subPatternJson.rotationInDegres == undefined) ? 0 : subPatternJson.rotationInDegrees;
+		let rotationInRadians = rotationInDegrees * (Math.PI / 80);
+		let rotation = generateRotationMatrix(rotationInRadians);
+		let translation = generateTranslationMatrix(translationX, translationY);
+
+		let transformation = multiplyMatrixByMatrix(translation, rotation);
+		//console.log(transformation);
+		subPattern.transformation = transformation;
+		dotPattern.add(subPattern);
+	}
+	//console.log(dotPattern);
+
+	/*
+	let distractorLinePattern;
+	distractorLinePattern = createUniformDistractorLinePattern(testCaseJson.distractorLinePattern.numberOfDistractorLines,
+					testCaseJson.distractorLinePattern.durationInMilliseconds,
+					testCaseJson.distractorLinePattern.colorPalette,
+					testCaseJson.distractorLinePattern.minWidth,
+					testCaseJson.distractorLinePattern.maxWidth);
+	*/
+
+	let distractorLinePatterns = new Array(testCaseJson.distractorLinePatterns.length);
+	for (let i = 0; i < testCaseJson.distractorLinePatterns.length; i++) {
+		distractorLinePatterns[i] = createUniformDistractorLinePattern(testCaseJson.distractorLinePatterns[i].numberOfDistractorLines,
+			testCaseJson.distractorLinePatterns[i].durationInMilliseconds,
+			testCaseJson.distractorLinePatterns[i].colorPalette,
+			testCaseJson.distractorLinePatterns[i].minWidth,
+			testCaseJson.distractorLinePatterns[i].maxWidth);
+	}
+	console.log(distractorLinePatterns);
+
+	let demo = false;//!!testCaseJson.demo;
+
+	let testCase = new TestCase(countdown, dotPattern, distractorLinePatterns, demo);
+	return testCase;
+}
+
 // Convert each entry in the array in the JSON string into a TestCase object using the constructors,
 // then return a Test made with those test cases.
 const randomSeed = "test_1";
-function jsonToTest(jsonString) {
-	let jsonObject = JSON.parse(jsonString);
-	version = jsonObject.version;
+function jsonToTest(testCasesString, demoCasesString) {
+	let testJsonObject = JSON.parse(testCasesString);
+	let demoJsonObject = JSON.parse(demoCasesString);
+	version = testJsonObject.version;
 	console.log("Version is " + version);
 	//console.log("Version Number: " + jsonObject.version);
 	//const groups = [[3,17,5],[17,30,7],[30,40,7],[40,50,28]];
 	//jsonObject.testCases = completeShuffle(randomSeed,jsonObject.testCases);
 	let testCases = [];
-	for (let i = 0; i < jsonObject.testCases.length; i++) {
-		let testCaseJson = jsonObject.testCases[i];
-
-		let countdown = new Countdown(testCaseJson.countdown);
-
-		let dotPattern = new DotPattern([], testCaseJson.durationOfDotPatternInMilliseconds);
-
-		const dotPatternsJson = testCaseJson.dotPatterns;
-
-		for (const subPatternJson of dotPatternsJson) {
-			let subPattern;
-			if (subPatternJson.type == "random") {
-				subPattern = createUniformDotPattern(subPatternJson.numberOfDots,
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.colorPalette,
-						subPatternJson.minRadius);
-						//subPatternJson.maxRadius);
-			} else if (subPatternJson.type == "line") {
-				subPattern = createLinearDotPattern(subPatternJson.numberOfDots,
-						subPatternJson.spacing,
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.color);
-						//subPatternJson.dotRadius);
-			} else if (subPatternJson.type == "circle") {
-				subPattern = createCircularDotPattern(subPatternJson.numberOfDots,
-						subPatternJson.circleRadius,
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.color);
-						//subPatternJson.dotRadius);
-			} else if (subPatternJson.type == "grid") {
-				subPattern = createGridDotPattern(subPatternJson.numberOfRows,
-						subPatternJson.numberOfColumns,
-						subPatternJson.spacingBetweenRows,
-						subPatternJson.spacingBetweenColumns,
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.color);
-						//subPatternJson.dotRadius);
-			} else if (subPatternJson.type == "angle") {
-				subPattern = createAngleDotPattern(subPatternJson.numberOfDotsOnFirstLine,
-						subPatternJson.numberOfDotsOnSecondLine,
-						subPatternJson.firstLineSpacing,
-						subPatternJson.secondLineSpacing,
-						subPatternJson.angleInDegrees * (Math.PI / 180),
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.color);
-						//subPatternJson.dotRadius);
-			} else if (subPatternJson.type == "HCP") {
-				subPattern = createHCPDotPattern(subPatternJson.numberOfRows,
-						subPatternJson.numberOfDotsPerRow,
-						subPatternJson.spacingBetweenRows,
-						subPatternJson.spacingBetweenDots,
-						subPatternJson.durationInMilliseconds,
-						subPatternJson.color);
-						//subPatternJson.dotRadius);
-			} else if (subPatternJson.type == "dot") {
-				subPattern = new Dot(subPatternJson.xCoord,
-							subPatternJson.yCoord,
-							subPatternJson.color);
-							//subPatternJson.dotRadius);
-			}
-			let xCoordStdDev = (subPatternJson.xCoordStdDev == undefined) ? 0 : subPatternJson.xCoordStdDev;
-			let yCoordStdDev = (subPatternJson.yCoordStdDev == undefined) ? 0 : subPatternJson.yCoordStdDev;
-			let dotRadiusStdDev = (subPatternJson.dotRadiusStdDev == undefined) ? 0 : subPatternJson.dotRadiusStdDev;
-			subPattern.mutate(xCoordStdDev, yCoordStdDev, dotRadiusStdDev);
-
-			let translationX = (subPatternJson.translationX == undefined) ? 0 : subPatternJson.translationX;
-			let translationY = (subPatternJson.translationY == undefined) ? 0 : subPatternJson.translationY;
-			let rotationInDegrees = (subPatternJson.rotationInDegrees == undefined) ? 0 : subPatternJson.rotationInDegrees;
-			let rotationInRadians = rotationInDegrees * (Math.PI / 180);
-
-			let rotation = generateRotationMatrix(rotationInRadians);
-			let translation = generateTranslationMatrix(translationX, translationY);
-
-			let transformation = multiplyMatrixByMatrix(translation, rotation);
-			//console.log(transformation);
-			subPattern.transformation = transformation;
-			dotPattern.add(subPattern);
-		}
-		//console.log(dotPattern);
-
-		/*
-		let distractorLinePattern;
-		distractorLinePattern = createUniformDistractorLinePattern(testCaseJson.distractorLinePattern.numberOfDistractorLines,
-						testCaseJson.distractorLinePattern.durationInMilliseconds,
-						testCaseJson.distractorLinePattern.colorPalette,
-						testCaseJson.distractorLinePattern.minWidth,
-						testCaseJson.distractorLinePattern.maxWidth);
-		*/
-
-		let distractorLinePatterns = new Array(testCaseJson.distractorLinePatterns.length);
-		for (let i = 0; i < testCaseJson.distractorLinePatterns.length; i++) {
-			distractorLinePatterns[i] = createUniformDistractorLinePattern(testCaseJson.distractorLinePatterns[i].numberOfDistractorLines,
-				testCaseJson.distractorLinePatterns[i].durationInMilliseconds,
-				testCaseJson.distractorLinePatterns[i].colorPalette,
-				testCaseJson.distractorLinePatterns[i].minWidth,
-				testCaseJson.distractorLinePatterns[i].maxWidth);
-		}
-
-		console.log(distractorLinePatterns);
-
-		let demo = false;//!!testCaseJson.demo;
-
-		let testCase = new TestCase(countdown, dotPattern, distractorLinePatterns, demo);
-		testCases.push(testCase);
+	let demoCases = [];
+	for (let i = 0; i < testJsonObject.testCases.length; i++) {
+		testCases.push(parseTestCaseJson(testJsonObject.testCases[i]));
+	}
+	for (let i = 0; i < demoJsonObject.testCases.length; i++) {
+		demoCases.push(parseTestCaseJson(demoJsonObject.testCases[i]));
 	}
 	
-	return new Test(testCases);
+	return new Test(testCases, demoCases);
 }
 /*
 let dotPattern = createUniformDotPattern(8, 2000, ["black", "blue", "green", "red", "orange"], 3, 5);
@@ -1033,37 +1053,42 @@ let jsonRequest = new XMLHttpRequest();
 // Event handler for when the JSON file arrives.
 jsonRequest.onreadystatechange = function() {
 	if ((jsonRequest.readyState == 4) && (jsonRequest.status == 200)) {
-		let test = jsonToTest(jsonRequest.response);
-		test.runTest(function(userResponse) {
-			console.log(userResponse);
-			console.log("Test completed; sending user answers to the server.");
-			var params = {
-				TableName: 'subitization_results',
-  				Item: {
-					sex: sex,
-					age: age,
-					email: email,
-					answers : userResponse.userAnswers,
-					version: version,
-					screenWidth: screen.width,
-					screenHeight: screen.height,
-					userFeedback: userResponse.userFeedback
-				},
-				screenWidth: screen.width,
-				screenHeight: screen.height,
-				userFeedback: userResponse.userFeedback
+		let demoRequest = new XMLHttpRequest();
+		demoRequest.onreadystatechange = function() {
+			if ((demoRequest.readyState == 4) && (demoRequest.status == 200)) {
+				let test = jsonToTest(jsonRequest.response, demoRequest.response);
+				test.runTest(function(userResponse) {
+					console.log(userResponse);
+					console.log("Test completed; sending user answers to the server.");
+					var params = {
+						TableName: 'subitization_results',
+  						Item: {
+							sex: sex,
+							age: age,
+							email: email,
+							answers : userResponse.userAnswers,
+							version: version,
+							screenWidth: screen.width,
+							screenHeight: screen.height,
+							userFeedback: userResponse.userFeedback
+						},
+						screenWidth: screen.width,
+						screenHeight: screen.height,
+						userFeedback: userResponse.userFeedback
+					}
+					//console.log(JSON.stringify({"userAnswers": userAnswers}));
+					let dataUploader = new XMLHttpRequest();
+					dataUploader.open("POST", "uploadData");
+					dataUploader.setRequestHeader("Content-Type", "application/json");
+					dataUploader.send(JSON.stringify(params));
+					//import AWS from 'aws-sdk'
+		
+					//AWS.config.region = process.env.REGION
+				});
 			}
-			//console.log(JSON.stringify({"userAnswers": userAnswers}));
-			let dataUploader = new XMLHttpRequest();
-			dataUploader.open("POST", "uploadData");
-			dataUploader.setRequestHeader("Content-Type", "application/json");
-			dataUploader.send(JSON.stringify(params));
-			//import AWS from 'aws-sdk'
-
-			//AWS.config.region = process.env.REGION
-
-
-		});
+		};
+		demoRequest.open("GET", "demo.json");
+		demoRequest.send();
 	}
 };
 jsonRequest.open("GET", "getNextTest");
