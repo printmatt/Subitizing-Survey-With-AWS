@@ -10,6 +10,15 @@ AWS.config.update({
 	secretAccessKey: process.env.secretAccessKey
 });
 
+vip_emails = new Set()
+vip_emails.add("laszlogoch@mail.adelphi.edu");
+vip_emails.add("mattvang@mail.adelphi.edu");
+vip_emails.add("chays@adelphi.edu");
+vip_emails.add("bertle@adelphi.edu");
+vip_emails.add("saliyari@alumni.iu.edu");
+
+reg_emails = new Set()
+
 const app = express();
 
 const PORT = process.env.PORT || 3000;
@@ -38,18 +47,23 @@ app.post("/uploadGenderAge",jsonParser,function(req,res){
 	let sex = req.body.sex;
 	let age = req.body.age;
 	let email = req.body.email;
-	const isEdu = (email.substring(email.length - 4, email.length) == ".edu");
-	const emailHash = hashString(email);
-	isEligible = isEdu && !(emailHash in emailHashSet);
-	emailHashSet[emailHash] = true;
-	console.log(isEligible);
 	console.log(sex);
 	console.log(age);
-	console.log(emailHashSet);
+	console.log(email);
 })
 
 
 app.post("/experimentEnded",jsonParser, function(req,res){
+	let email = req.body.Item.email
+	console.log(email);
+	if (reg_emails.has(email) && !vip_emails.has(email)) {
+		console.log(email);
+		console.log("Email already used");
+		return;
+	}
+
+	reg_emails.add(email);
+
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
 	params.Item.UID = uuid.v4();
@@ -63,6 +77,16 @@ app.post("/experimentEnded",jsonParser, function(req,res){
 })
 
 app.post("/uploadData", jsonParser, function(req, res) {
+	let email = req.body.Item.email
+	console.log(email);
+	if (reg_emails.has(email) && !vip_emails.has(email)) {
+		console.log(email);
+		console.log("Email already used");
+		return;
+	}
+
+	reg_emails.add(email);
+	
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
     params.Item.UID = uuid.v4();
