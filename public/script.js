@@ -751,12 +751,12 @@ class Test {
 		age = document.getElementById('age').value;
 		email = document.getElementById('email').value;
 
-		if (email.substring(email.length - 3) !== "edu") {
+		if (email.substring(email.length - 4) !== ".edu") {
 			window.alert("Your email needs to be an edu email address.");
 			this.getGenderAge(callback);
 			return;
 		}
-		
+
 		dialogueContainer.style.display = "none";
 		continueButton.disabled = true;
 		continueButton.style.visibility = "hidden";
