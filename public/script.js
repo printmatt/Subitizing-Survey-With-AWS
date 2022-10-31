@@ -649,6 +649,31 @@ class TestCase {
 	}
 }
 
+class DemoIntroductionScreen {
+	constructor() {
+	}
+
+	show(callback) {
+		this.eventListener = this.buttonClicked.bind(this, callback);
+		nextButton.addEventListener("click", this.eventListener);
+		nextButton.style.visibility = "visible";
+		nextButton.disabled = false;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.textAlign = "center";
+		context.fillStyle = "black";
+		context.font = "25px Arial";
+		context.fillText("The first few dot patterns will be demos.", canvas.width / 2, canvas.height / 3);
+		context.fillText("Click the NEXT button to continue.", canvas.width / 2, canvas.height / 2);
+	}
+
+	buttonClicked(callback) {
+		nextButton.removeEventListener("click", this.eventListener);
+		nextButton.style.visibility = "hidden";
+		nextButton.disabled = true;
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		timeouts.push(setTimeout(callback, 0));
+	}
+}
 class DemoTransitionScreen {
 	constructor() {
 	}
@@ -762,7 +787,8 @@ class Test {
 		continueButton.style.visibility = "hidden";
 		endExperimentButton.disabled = false;
 		endExperimentButton.style.visibility = "visible";
-		timeouts.push(setTimeout(this.nextDemoCase.bind(this, callback), 0));
+		const demoScreen = new DemoIntroductionScreen();
+		timeouts.push(setTimeout(demoScreen.show.bind(demoScreen, this.nextDemoCase.bind(this, callback)), 0));
 	}
 
 	nextDemoCase(callback) {
