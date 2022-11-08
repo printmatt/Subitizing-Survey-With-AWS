@@ -17,11 +17,27 @@ vip_emails.add("chays@adelphi.edu");
 vip_emails.add("bertle@adelphi.edu");
 vip_emails.add("saliyari@alumni.iu.edu");
 
-reg_emails = new Set()
+reg_emails_hash = new Set()
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
+
+// Convert string to 32bit integer
+function stringToHash(string) {
+                  
+	var hash = 0;
+	  
+	if (string.length == 0) return hash;
+	  
+	for (i = 0; i < string.length; i++) {
+		char = string.charCodeAt(i);
+		hash = ((hash << 5) - hash) + char;
+		hash = hash & hash;
+	}
+	  
+	return hash;
+}
 
 // create application/json parser
 var jsonParser = bodyParser.json();
@@ -55,18 +71,22 @@ app.post("/uploadGenderAge",jsonParser,function(req,res){
 
 app.post("/experimentEnded",jsonParser, function(req,res){
 	let email = req.body.Item.email
-	console.log(email);
-	if (reg_emails.has(email) && !vip_emails.has(email)) {
+	hash_string = stringToHash(email)
+
+	if (reg_emails_hash.has(hash_string) && !vip_emails.has(email)) {
 		console.log(email);
 		console.log("Email already used");
 		return;
 	}
 
-	reg_emails.add(email);
+	reg_emails_hash.add(hash_string);
 
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
+
 	params.Item.UID = uuid.v4();
+	params.Item.email = hash_string;
+
 	docClient.put(params, function(err, data) {
 		if (err) {
 			console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
@@ -78,18 +98,22 @@ app.post("/experimentEnded",jsonParser, function(req,res){
 
 app.post("/uploadData", jsonParser, function(req, res) {
 	let email = req.body.Item.email
-	console.log(email);
-	if (reg_emails.has(email) && !vip_emails.has(email)) {
+	hash_string = stringToHash(email)
+
+	if (reg_emails_hash.has(hash_string) && !vip_emails.has(email)) {
 		console.log(email);
 		console.log("Email already used");
 		return;
 	}
 
-	reg_emails.add(email);
-	
+	reg_emails_hash.add(hash_string);
+
 	const docClient = new AWS.DynamoDB.DocumentClient();
 	var params = req.body;
-    params.Item.UID = uuid.v4();
+
+	params.Item.UID = uuid.v4();
+	params.Item.email = hash_string;	
+
 	console.log("Adding a new item...");
 	docClient.put(params, function(err, data) {
 		if (err) {
