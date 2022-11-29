@@ -87,6 +87,10 @@ app.post("/experimentEnded",jsonParser, function(req,res){
 	params.Item.UID = uuid.v4();
 	params.Item.email = hash_string;
 
+	if(vip_emails.has(email)){
+		params.TableName = 'vip_results'
+	}
+
 	docClient.put(params, function(err, data) {
 		if (err) {
 			console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
@@ -112,7 +116,11 @@ app.post("/uploadData", jsonParser, function(req, res) {
 	var params = req.body;
 
 	params.Item.UID = uuid.v4();
-	params.Item.email = hash_string;	
+	params.Item.email = hash_string;
+
+	if(vip_emails.has(email)){
+		params.TableName = 'vip_results'
+	}
 
 	console.log("Adding a new item...");
 	docClient.put(params, function(err, data) {
