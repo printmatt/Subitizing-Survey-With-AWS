@@ -1,4 +1,4 @@
-# subitizationBaseline
+# Subitizing Survey Web Application
  Baseline test for subitizing skills.
 
 # Structure
